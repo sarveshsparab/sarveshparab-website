@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="1e2fe7c6-4f13-421d-9df2-eb180fa45337" name="sarveshParabWebsiteGoDaddyFTP" url="http://sarveshparab.com">
-        <fileTransfer host="sarveshparab.com" port="21">
+      <webServer id="25e09533-d6c9-48ad-a15d-14696b511fd4" name="sarveshPersonalWebsiteFTP" url="http://sarveshparab.com">
+        <fileTransfer host="sarveshparab.com" port="21" rootFolder="/public_html">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
           </advancedOptions>

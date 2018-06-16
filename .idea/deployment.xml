@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="sarveshParabWebsiteGoDaddyFTP">
+  <component name="PublishConfigData" serverName="sarveshPersonalWebsiteFTP">
     <serverData>
-      <paths name="sarveshParabWebsiteGoDaddyFTP">
+      <paths name="sarveshPersonalWebsiteFTP">
         <serverdata>
           <mappings>
-            <mapping deploy="/public_html" local="$PROJECT_DIR$" web="/" />
-            <mapping local="" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
-            <excludedPath path="/public_html/thoughtshowWebsite" />
+            <excludedPath path="/thoughtshowWebsite" />
           </excludedPaths>
         </serverdata>
       </paths>
