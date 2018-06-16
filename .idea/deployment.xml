@@ -5,10 +5,11 @@
       <paths name="sarveshParabWebsiteGoDaddyFTP">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/public_html" local="$PROJECT_DIR$" web="/" />
+            <mapping local="" />
           </mappings>
           <excludedPaths>
-            <excludedPath path="/thoughtshowWebsite" />
+            <excludedPath path="/public_html/thoughtshowWebsite" />
           </excludedPaths>
         </serverdata>
       </paths>
