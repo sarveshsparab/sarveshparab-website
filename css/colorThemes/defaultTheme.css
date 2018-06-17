@@ -1,0 +1,10 @@
+/* Only background properties here ...  rest default is implemented in the menuLayout.css file */
+
+/* Background Colors or Images */
+.sp-bg-color {
+    background-color: #fff;
+}
+.sp-bg-img {
+    background-image: url(../../resources/bgImages/cyanBG.jpg);
+}
+/* ************************************************************************** */

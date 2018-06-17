@@ -1,0 +1,30 @@
+/* Menu Colors */
+.sp-menu li:hover > a,
+.sp-menu li.current > a {
+    background: #2a70e8;
+    color: #fff;
+}
+/* ************************************************************************** */
+
+/* Background Colors or Images */
+.sp-bg-color {
+    background-color: #000000;
+}
+.sp-bg-img {
+    background-image: url(../../resources/bgImages/blueBG.jpg);
+}
+/* ************************************************************************** */
+
+/* Form Colors */
+.sp-menu form .input:hover input,
+.sp-menu form .textarea:hover textarea {
+    border-color: #94b7f3;
+}
+.sp-menu form .button {
+    background-color: #2a70e8;
+}
+.sp-menu form .input input:focus,
+.sp-menu form .textarea textarea:focus {
+    border-color: #2a70e8;
+}
+/* ************************************************************************** */
