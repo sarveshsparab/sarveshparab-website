@@ -1,0 +1,48 @@
+html, body, aside, main {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 40px;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+main {
+    max-width: 100%;
+    max-height: 250px;
+    background-color: #43bf43;
+    margin: 50px auto;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bodyWithMenu {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+
+    aside {
+        width: auto;
+    }
+}
