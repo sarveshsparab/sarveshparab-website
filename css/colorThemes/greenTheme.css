@@ -8,14 +8,14 @@
 
 /* Background Colors or Images */
 .sp-bg-color {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 .sp-bg-img {
     background-image: url(../../resources/bgImages/greenBG.jpg);
 }
 /* ************************************************************************** */
 
-/* Form Colors */
+/* Menu-Form Colors */
 .sp-menu form .input:hover input,
 .sp-menu form .textarea:hover textarea {
     border-color: #8dc9e5;
@@ -26,5 +26,66 @@
 .sp-menu form .input input:focus,
 .sp-menu form .textarea textarea:focus {
     border-color: #43bf43;
+}
+/* ************************************************************************** */
+
+/* SP-Form Colors */
+/* *** Normal */
+.sp-form .toggle i:before {
+    background-color: #43bf43;
+}
+.sp-form .button {
+    background-color: #43bf43;
+}
+
+/* *** Hover */
+.sp-form .input:hover input,
+.sp-form .select:hover select,
+.sp-form .textarea:hover textarea,
+.sp-form .radio:hover i,
+.sp-form .checkbox:hover i,
+.sp-form .toggle:hover i,
+.sp-form .ui-slider-handle:hover {
+    border-color: #91e393;
+}
+.sp-form .rating input + label:hover,
+.sp-form .rating input + label:hover ~ label {
+    color: #43bf43;
+}
+
+/* *** Focus */
+.sp-form .input input:focus,
+.sp-form .select select:focus,
+.sp-form .textarea textarea:focus,
+.sp-form .radio input:focus + i,
+.sp-form .checkbox input:focus + i,
+.sp-form .toggle input:focus + i {
+    border-color: #43bf43;
+}
+
+
+/* *** Checked */
+.sp-form .radio input + i:after {
+    background-color: #43bf43;
+}
+.sp-form .checkbox input + i:after {
+    color: #43bf43;
+}
+.sp-form .radio input:checked + i,
+.sp-form .checkbox input:checked + i,
+.sp-form .toggle input:checked + i {
+    border-color: #43bf43;
+}
+.sp-form .rating input:checked ~ label {
+    color: #43bf43;
+}
+
+/* ************************************************************************** */
+
+/* Custom Scroll-Bar */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #43bf43;
 }
 /* ************************************************************************** */
