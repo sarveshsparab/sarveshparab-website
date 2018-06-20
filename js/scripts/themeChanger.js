@@ -27,4 +27,15 @@ $(document).ready(function() {
     $("#yellowThemeId").click(function() {
         $("#themeCSSID").attr("href","css/colorThemes/yellowTheme.css");
     });
+
+    /* Bg Image activation logic*/
+    $("#bgToggleID").change(function() {
+        if($(this).is(":checked")) {
+            $("#spBodyId").removeClass("sp-bg-color");
+            $("#spBodyId").addClass("sp-bg-img");
+        } else {
+            $("#spBodyId").removeClass("sp-bg-img");
+            $("#spBodyId").addClass("sp-bg-color");
+        }
+    });
 });
