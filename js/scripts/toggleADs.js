@@ -1,18 +1,19 @@
-$(document).ready(function() {
-    /* Google ADs toggle logic*/
-    $("#adsToggleID").change(function() {
-        if($(this).is(":checked")) {
-            alert("Thank you for supporting ADs on this page");
-            $("#mainContentDivId").removeClass("mainContentWithoutADs");
-            $("#adsContentDivId").removeClass("googleAdsDisabled");
-            $("#mainContentDivId").addClass("mainContentWithADs");
-            $("#adsContentDivId").addClass("googleAdsEnabled");
-        } else {
-            alert("ADs help run this website, PLEASE keep them on");
-            $("#mainContentDivId").removeClass("mainContentWithADs");
-            $("#adsContentDivId").removeClass("googleAdsEnabled");
-            $("#mainContentDivId").addClass("mainContentWithoutADs");
-            $("#adsContentDivId").addClass("googleAdsDisabled");
-        }
-    });
+/* Google ADs toggle logic*/
+$(document).on('change','#adsToggleID', function () {
+    let $mainContentDivIdSelector = $("#mainContentDivId");
+    let $adsContentDivIdSelector = $("#adsContentDivId");
+    if($(this).is(":checked")) {
+        alert("Thank you for supporting ADs on this page");
+        $mainContentDivIdSelector.removeClass("mainContentWithoutADs");
+        $adsContentDivIdSelector.removeClass("googleAdsDisabled");
+        $mainContentDivIdSelector.addClass("mainContentWithADs");
+        $adsContentDivIdSelector.addClass("googleAdsEnabled");
+    } else {
+        alert("ADs help run this website, PLEASE keep them on");
+        $mainContentDivIdSelector.removeClass("mainContentWithADs");
+        $adsContentDivIdSelector.removeClass("googleAdsEnabled");
+        $mainContentDivIdSelector.addClass("mainContentWithoutADs");
+        $adsContentDivIdSelector.addClass("googleAdsDisabled");
+    }
 });
+/* ******************************************** */

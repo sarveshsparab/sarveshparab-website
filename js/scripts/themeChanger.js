@@ -1,38 +1,39 @@
-$(document).ready(function() {
-    /* Theme changing logic*/
-    $("#blackThemeId").click(function() {
-        $("#themeCSSID").attr("href","css/colorThemes/blackTheme.css");
-    });
-    $("#blueThemeId").click(function() {
-        $("#themeCSSID").attr("href","css/colorThemes/blueTheme.css");
-    });
-    $("#greenThemeId").click(function() {
-        $("#themeCSSID").attr("href","css/colorThemes/greenTheme.css");
-    });
-    $("#orangeThemeId").click(function() {
-        $("#themeCSSID").attr("href","css/colorThemes/orangeTheme.css");
-    });
-    $("#pinkThemeId").click(function() {
-        $("#themeCSSID").attr("href","css/colorThemes/pinkTheme.css");
-    });
-    $("#purpleThemeId").click(function() {
-        $("#themeCSSID").attr("href","css/colorThemes/purpleTheme.css");
-    });
-    $("#redThemeId").click(function() {
-        $("#themeCSSID").attr("href","css/colorThemes/redTheme.css");
-    });
-    $("#yellowThemeId").click(function() {
-        $("#themeCSSID").attr("href","css/colorThemes/yellowTheme.css");
-    });
-
-    /* Bg Image activation logic*/
-    $("#bgToggleID").change(function() {
-        if($(this).is(":checked")) {
-            $("#spBodyId").removeClass("sp-bg-color");
-            $("#spBodyId").addClass("sp-bg-img");
-        } else {
-            $("#spBodyId").removeClass("sp-bg-img");
-            $("#spBodyId").addClass("sp-bg-color");
-        }
-    });
+/* Theme changing logic*/
+$(document).on('click','#blackThemeId', function () {
+    $("#themeCSSID").attr("href","css/colorThemes/blackTheme.css");
 });
+$(document).on('click','#blueThemeId', function () {
+    $("#themeCSSID").attr("href","css/colorThemes/blueTheme.css");
+});
+$(document).on('click','#greenThemeId', function () {
+    $("#themeCSSID").attr("href","css/colorThemes/greenTheme.css");
+});
+$(document).on('click','#orangeThemeId', function () {
+    $("#themeCSSID").attr("href","css/colorThemes/orangeTheme.css");
+});
+$(document).on('click','#pinkThemeId', function () {
+    $("#themeCSSID").attr("href","css/colorThemes/pinkTheme.css");
+});
+$(document).on('click','#purpleThemeId', function () {
+    $("#themeCSSID").attr("href","css/colorThemes/purpleTheme.css");
+});
+$(document).on('click','#redThemeId', function () {
+    $("#themeCSSID").attr("href","css/colorThemes/redTheme.css");
+});
+$(document).on('click','#yellowThemeId', function () {
+    $("#themeCSSID").attr("href","css/colorThemes/yellowTheme.css");
+});
+/* ******************************************** */
+
+/* Bg Image activation logic*/
+$(document).on('change','#bgToggleID', function () {
+    let $spBodyIdSelector =  $("#spBodyId");
+    if($(this).is(":checked")) {
+        $spBodyIdSelector.removeClass("sp-bg-color");
+        $spBodyIdSelector.addClass("sp-bg-img");
+    } else {
+        $spBodyIdSelector.removeClass("sp-bg-img");
+        $spBodyIdSelector.addClass("sp-bg-color");
+    }
+});
+/* ******************************************** */
