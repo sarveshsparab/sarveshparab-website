@@ -6,9 +6,6 @@ $(document).ready(function() {
     $("#blueThemeId").click(function() {
         $("#themeCSSID").attr("href","css/colorThemes/blueTheme.css");
     });
-    $("#defaultThemeId").click(function() {
-        $("#themeCSSID").attr("href","css/colorThemes/defaultTheme.css");
-    });
     $("#greenThemeId").click(function() {
         $("#themeCSSID").attr("href","css/colorThemes/greenTheme.css");
     });
