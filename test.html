@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/font-awesome/fontawesome-all.css">
     <link rel="stylesheet" href="css/menuLayout.css">
     <link rel="stylesheet" href="css/formLayout.css">
-    <link rel="stylesheet" href="css/colorThemes/defaultTheme.css">
+    <link id="themeCSSID" rel="stylesheet" href="css/colorThemes/defaultTheme.css">
+
+    <script src="js/jquery/jquery-1.9.1.min.js"></script>
+    <script src="js/scripts/themeChanger.js"></script>
 
 </head>
 
@@ -196,19 +199,19 @@
             <div class="grid-container4">
                 <div class="grid-column grid-column2">
                     <ul class="sp-menu-response-to-switcher">
-                        <li><a href="#"><i class="fa fa-square" style="color: #222222"></i>Black</a></li>
-                        <li><a href="#"><i class="fa fa-square" style="color: #2a70e8"></i>Blue</a></li>
-                        <li><a href="#"><i class="fa fa-square" style="color: #43bf43"></i>Green</a></li>
-                        <li><a href="#"><i class="fa fa-square" style="color: #fd7337"></i>Orange</a></li>
-                        <li><a href="#"><i class="far fa-square"></i>Default</a></li>
+                        <li id="blackThemeId" name="blackThemeName"><a href="#"><i class="fa fa-square" style="color: #222222"></i>Black</a></li>
+                        <li id="blueThemeId" name="blueThemeName"><a href="#"><i class="fa fa-square" style="color: #2a70e8"></i>Blue</a></li>
+                        <li id="greenThemeId" name="greenThemeName"><a href="#"><i class="fa fa-square" style="color: #43bf43"></i>Green</a></li>
+                        <li id="orangeThemeId" name="orangeThemeName"><a href="#"><i class="fa fa-square" style="color: #fd7337"></i>Orange</a></li>
+                        <li id="defaultThemeId" name="defaultThemeName"><a href="#"><i class="far fa-square"></i>Default</a></li>
                     </ul>
                 </div>
                 <div class="grid-column grid-column2">
                     <ul class="sp-menu-response-to-switcher">
-                        <li><a href="#"><i class="fa fa-square" style="color: #d2477e"></i>Pink</a></li>
-                        <li><a href="#"><i class="fa fa-square" style="color: #ad3bc4"></i>Purple</a></li>
-                        <li><a href="#"><i class="fa fa-square" style="color: #cc3d3d"></i>Red</a></li>
-                        <li><a href="#"><i class="fa fa-square" style="color: #ffc228"></i>Yellow</a></li>
+                        <li id="pinkThemeId" name="pinkThemeName"><a href="#"><i class="fa fa-square" style="color: #d2477e"></i>Pink</a></li>
+                        <li id="purpleThemeId" name="purpleThemeName"><a href="#"><i class="fa fa-square" style="color: #ad3bc4"></i>Purple</a></li>
+                        <li id="redThemeId" name="redThemeName"><a href="#"><i class="fa fa-square" style="color: #cc3d3d"></i>Red</a></li>
+                        <li id="yellowThemeId" name="yellowThemeName"><a href="#"><i class="fa fa-square" style="color: #ffc228"></i>Yellow</a></li>
                         <li>
                             <a>
                                 <form action="#" class="sp-form">
