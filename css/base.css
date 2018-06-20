@@ -30,6 +30,35 @@ main {
     background-color: #43bf43;
     margin: 70px 10px;
 }
+main .mainContentWithADs{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 87%;
+    background-color: red;
+}
+main .mainContentWithoutADs{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    background-color: red;
+}
+main .googleAdsEnabled {
+    margin: 0;
+    float: right;
+    padding: 0;
+    width: 13%;
+    background-color: yellow;
+}
+main .googleAdsDisabled {
+    margin: 0;
+    float: right;
+    padding: 0;
+    width: 0%;
+    background-color: yellow;
+    display: none;
+}
 footer {
     position: fixed;
     bottom: 0;
