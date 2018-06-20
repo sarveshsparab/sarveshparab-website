@@ -102,6 +102,36 @@ a:hover {
     main {
         height: 880px;
     }
+    main .mainContentWithADs{
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 100%;
+        background-color: red;
+    }
+    main .mainContentWithoutADs{
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 100%;
+        background-color: red;
+    }
+    main .googleAdsEnabled {
+        margin: 0;
+        float: right;
+        padding: 0;
+        width: 0%;
+        background-color: yellow;
+        display: none;
+    }
+    main .googleAdsDisabled {
+        margin: 0;
+        float: right;
+        padding: 0;
+        width: 0%;
+        background-color: yellow;
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -113,6 +143,32 @@ a:hover {
     }
     aside {
         width: auto;
+    }
+    main .mainContentWithADs{
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 100%;
+    }
+    main .mainContentWithoutADs{
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 100%;
+    }
+    main .googleAdsEnabled {
+        margin: 0;
+        float: right;
+        padding: 0;
+        width: 0%;
+        display: none;
+    }
+    main .googleAdsDisabled {
+        margin: 0;
+        float: right;
+        padding: 0;
+        width: 0%;
+        display: none;
     }
 }
 
