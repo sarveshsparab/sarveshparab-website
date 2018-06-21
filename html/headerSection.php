@@ -1,3 +1,24 @@
+<?php
+
+// Make the page validate
+ini_set('session.use_trans_sid', '0');
+
+// Create a random string, leaving out 'o' to avoid confusion with '0'
+$char = strtoupper(substr(str_shuffle('abcdefghjkmnpqrstuvwxyz'), 0, 4));
+
+// Concatenate the random string onto the random numbers
+// The font 'Anorexia' doesn't have a character for '8', so the numbers will only go up to 7
+// '0' is left out to avoid confusion with 'O'
+$str = rand(1, 7) . rand(1, 7) . $char;
+
+// Begin the session
+session_start();
+
+// Set the session contents
+$_SESSION['captcha_id'] = $str;
+
+?>
+
 <!-- Navigation menu -->
 <ul class="sp-menu sp-menu-fixed sp-menu-response-to-icons sp-menu-anim-scale">
     <!-- Home -->
@@ -114,3 +135,68 @@
     <!--/ drop me a line -->
 </ul>
 <!--/ Navigation menu -->
+
+<script type="text/javascript">
+    $(function () {
+        // Validation
+        $("#dropLineForm").validate({
+            rules:
+                {
+                    name:
+                        {
+                            required: true
+                        },
+                    email:
+                        {
+                            required: true,
+                            email: true
+                        },
+                    subject:
+                        {
+                            required: true,
+                            minlength: 3
+                        },
+                    message:
+                        {
+                            required: true,
+                            minlength: 3
+                        },
+                    captcha:
+                        {
+                            required: true,
+                            remote: '../resources/captcha/process.php'
+                        }
+                },
+            messages:
+                {
+                    name:
+                        {
+                            required: 'Please enter your name'
+                        },
+                    email:
+                        {
+                            required: 'Please enter your email address',
+                            email: 'Please enter a valid email address'
+                        },
+                    subject:
+                        {
+                            required: 'Please enter a subject',
+                            minlength: 'Please enter a more detailed subject'
+                        },
+                    message:
+                        {
+                            required: 'Please enter a subject',
+                            minlength: 'Please enter a more detailed subject'
+                        },
+                    captcha:
+                        {
+                            required: 'Please enter characters',
+                            remote: 'Correct captcha is required'
+                        }
+                },
+            errorPlacement: function (error, element) {
+                error.insertAfter(element.parent());
+            }
+        });
+    });
+</script>

@@ -1,4 +1,4 @@
 $(function(){
-    $("#spHeaderId").load("../../html/headerSection.html");
+    $("#spHeaderId").load("../../html/headerSection.php");
     $("#spFooterId").load("../../html/footerSection.html");
 });
