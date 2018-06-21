@@ -3,12 +3,14 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/js/scripts/loadPageSections.min.js" />
+        <item url="file://$PROJECT_DIR$/js/scripts/navigationHandler.min.js" />
         <item url="file://$PROJECT_DIR$/js/scripts/themeChanger.min.js" />
         <item url="file://$PROJECT_DIR$/js/scripts/toggleADs.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/js/scripts/loadPageSections.min.js" />
+      <root url="file://$PROJECT_DIR$/js/scripts/loadLandingPageSections.min.js" />
+      <root url="file://$PROJECT_DIR$/js/scripts/navigationHandler.min.js" />
       <root url="file://$PROJECT_DIR$/js/scripts/themeChanger.min.js" />
       <root url="file://$PROJECT_DIR$/js/scripts/toggleADs.min.js" />
     </CLASSES>
