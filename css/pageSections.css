@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeue-webfont.woff') format('woff'),
+    url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+    url('../fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.blogSectionActive{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.blogSectionActive > .wipIcons{
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+    color: #2da5da;
+}
+
+.blogSectionActive > hr {
+    border: 0;
+    height: 2px;
+    width: 80%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.blogSectionActive > .wipHoldOn{
+    color: #2da5da;
+    font-family: BebasNeue, Arial, sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+.blogSectionInactive{
+    display: none;
+}
