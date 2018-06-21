@@ -1,27 +1,27 @@
 /* Theme changing logic*/
 $(document).on('click','#blackThemeId', function () {
-    $("#themeCSSID").attr("href","css/colorThemes/blackTheme.min.css");
+    $("#themeCSSID").attr("href","css/colorThemes/blackTheme.css");
 });
 $(document).on('click','#blueThemeId', function () {
-    $("#themeCSSID").attr("href","css/colorThemes/blueTheme.min.css");
+    $("#themeCSSID").attr("href","css/colorThemes/blueTheme.css");
 });
 $(document).on('click','#greenThemeId', function () {
-    $("#themeCSSID").attr("href","css/colorThemes/greenTheme.min.css");
+    $("#themeCSSID").attr("href","css/colorThemes/greenTheme.css");
 });
 $(document).on('click','#orangeThemeId', function () {
-    $("#themeCSSID").attr("href","css/colorThemes/orangeTheme.min.css");
+    $("#themeCSSID").attr("href","css/colorThemes/orangeTheme.css");
 });
 $(document).on('click','#pinkThemeId', function () {
-    $("#themeCSSID").attr("href","css/colorThemes/pinkTheme.min.css");
+    $("#themeCSSID").attr("href","css/colorThemes/pinkTheme.css");
 });
 $(document).on('click','#purpleThemeId', function () {
-    $("#themeCSSID").attr("href","css/colorThemes/purpleTheme.min.css");
+    $("#themeCSSID").attr("href","css/colorThemes/purpleTheme.css");
 });
 $(document).on('click','#redThemeId', function () {
-    $("#themeCSSID").attr("href","css/colorThemes/redTheme.min.css");
+    $("#themeCSSID").attr("href","css/colorThemes/redTheme.css");
 });
 $(document).on('click','#yellowThemeId', function () {
-    $("#themeCSSID").attr("href","css/colorThemes/yellowTheme.min.css");
+    $("#themeCSSID").attr("href","css/colorThemes/yellowTheme.css");
 });
 /* ******************************************** */
 
