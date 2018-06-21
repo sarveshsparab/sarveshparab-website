@@ -383,9 +383,17 @@
 .sp-menu .grid-container2 {
     width: 155px;
 }
+.sp-menu .grid-column2half,
+.sp-menu .grid-container2half {
+    width: 194px;
+}
 .sp-menu .grid-column3,
 .sp-menu .grid-container3 {
     width: 233px;
+}
+.sp-menu .grid-column3half,
+.sp-menu .grid-container3half {
+    width: 272px;
 }
 .sp-menu .grid-column4,
 .sp-menu .grid-container4 {
