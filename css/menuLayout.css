@@ -443,6 +443,9 @@
     line-height: inherit;
     text-align: center;
 }
+.sp-menu li a > .fa-right {
+    float: right;
+}
 .sp-menu li a > .fab {
     display: block;
     float: left;
