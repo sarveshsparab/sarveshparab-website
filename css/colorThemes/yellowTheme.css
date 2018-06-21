@@ -88,3 +88,12 @@
     background-color: #ffc228;
 }
 /* ************************************************************************** */
+
+/* Work In-Progress */
+.blogSectionActive > .wipHoldOn{
+    color: #ffc228;
+}
+.blogSectionActive > .wipIcons{
+    color: #ffc228;
+}
+/* ************************************************************************** */

@@ -88,3 +88,12 @@
     background-color: #2a70e8;
 }
 /* ************************************************************************** */
+
+/* Work In-Progress */
+.blogSectionActive > .wipHoldOn{
+    color: #2a70e8;
+}
+.blogSectionActive > .wipIcons{
+    color: #2a70e8;
+}
+/* ************************************************************************** */
