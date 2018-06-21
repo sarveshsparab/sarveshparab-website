@@ -58,7 +58,58 @@
     <!-- drop me a line -->
     <li id="dropLineId" aria-haspopup="true" class="right">
         <a href="#"><i class="fa fa-envelope"></i>Drop a line<i class="fa fa-indicator fa-chevron-down"></i></a>
-        <div id="dropLineListdiv" class="grid-container8"></div>
+        <div id="dropLineListdiv" class="grid-container8">
+            <form action="#" method="post" id="dropLineForm" class="sp-form">
+                <fieldset>
+                    <div class="row">
+                        <section class="col col-6">
+                            <label class="label">Name</label>
+                            <label class="input">
+                                <i class="icon-append fa fa-user"></i>
+                                <input type="text" name="name" id="name">
+                            </label>
+                        </section>
+                        <section class="col col-6">
+                            <label class="label">E-mail</label>
+                            <label class="input">
+                                <i class="icon-append fa fa-at"></i>
+                                <input type="email" name="email" id="email">
+                            </label>
+                        </section>
+                    </div>
+                    <section>
+                        <label class="label">Subject</label>
+                        <label class="input">
+                            <i class="icon-append fa fa-tag"></i>
+                            <input type="text" name="subject" id="subject">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">Message</label>
+                        <label class="textarea">
+                            <i class="icon-append fa fa-comment"></i>
+                            <textarea rows="3" name="message" id="message"></textarea>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">Enter characters below:</label>
+                        <label class="input input-captcha">
+                            <img src="../resources/captcha/image.php?<?php echo time(); ?>" width="100" height="35"
+                                 alt="Captcha image"/>
+                            <input type="text" maxlength="6" name="captcha" id="captcha">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="checkbox"><input type="checkbox" name="copy"><i></i>Send a copy to my e-mail address</label>
+                    </section>
+                    <button type="submit" class="button left">Send message</button>
+                </fieldset>
+                <div class="message">
+                    <i class="fa fa-check"></i>
+                    <p>Your message was successfully sent!</p>
+                </div>
+            </form>
+        </div>
     </li>
     <!--/ drop me a line -->
 </ul>
