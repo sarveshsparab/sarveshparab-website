@@ -28,7 +28,6 @@ main {
     min-height: 100%;
     height: auto !important; /*Cause footer to stick to bottom in IE 6*/
     height: 100%;
-    background-color: #43bf43;
     margin: 70px 10px;
 }
 main .mainContentWithADs{
@@ -36,28 +35,24 @@ main .mainContentWithADs{
     padding: 0;
     float: left;
     width: 87%;
-    background-color: red;
 }
 main .mainContentWithoutADs{
     margin: 0;
     padding: 0;
     float: left;
     width: 100%;
-    background-color: red;
 }
 main .googleAdsEnabled {
     margin: 0;
     float: right;
     padding: 0;
     width: 13%;
-    background-color: yellow;
 }
 main .googleAdsDisabled {
     margin: 0;
     float: right;
     padding: 0;
     width: 0%;
-    background-color: yellow;
     display: none;
 }
 footer {
@@ -107,21 +102,18 @@ a:hover {
         padding: 0;
         float: left;
         width: 100%;
-        background-color: red;
     }
     main .mainContentWithoutADs{
         margin: 0;
         padding: 0;
         float: left;
         width: 100%;
-        background-color: red;
     }
     main .googleAdsEnabled {
         margin: 0;
         float: right;
         padding: 0;
         width: 0%;
-        background-color: yellow;
         display: none;
     }
     main .googleAdsDisabled {
@@ -129,7 +121,6 @@ a:hover {
         float: right;
         padding: 0;
         width: 0%;
-        background-color: yellow;
         display: none;
     }
 }
