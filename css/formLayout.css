@@ -66,6 +66,7 @@
 .sp-form .radio,
 .sp-form .checkbox,
 .sp-form .toggle,
+.sp-form .toggleConfirm,
 .sp-form .button {
 	position: relative;
 	display: block;
@@ -332,6 +333,70 @@
 	text-align: right;
 }
 .sp-form .toggle input:checked + i:before {
+	right: 36px;
+}
+
+.sp-form .toggleConfirm {
+	margin-bottom: 4px;
+	padding-left: 61px;
+	font-size: 15px;
+	line-height: 27px;
+	color: #404040;
+	cursor: pointer;
+}
+.sp-form .toggleConfirm:last-child {
+	margin-bottom: 0;
+}
+.sp-form .toggleConfirm input {
+	position: absolute;
+	left: -9999px;
+}
+.sp-form .toggleConfirm i {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 0;
+	display: block;
+	width: 49px;
+	height: 17px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 12px;
+	background: #fff;
+}
+.sp-form .toggleConfirm i:after {
+	content: 'NO';
+	position: absolute;
+	top: 2px;
+	right: 8px;
+	left: 8px;
+	font-style: normal;
+	font-size: 9px;
+	line-height: 13px;
+	font-weight: 700;
+	text-align: left;
+	color: #5f5f5f;
+}
+.sp-form .toggleConfirm i:before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 4px;
+	right: 4px;
+	display: block;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	opacity: 1;
+	-ms-transition: right 0.2s;
+	-moz-transition: right 0.2s;
+	-webkit-transition: right 0.2s;
+}
+.sp-form .toggleConfirm input:checked + i:after {
+	content: 'YES';
+	text-align: right;
+}
+.sp-form .toggleConfirm input:checked + i:before {
 	right: 36px;
 }
 /* ************************************************************************** */
@@ -651,6 +716,7 @@
 .sp-form .radio i,
 .sp-form .checkbox i,
 .sp-form .toggle i,
+.sp-form .toggleConfirm i,
 .sp-form .icon-append,
 .sp-form .icon-prepend {
 	border-color: #e5e5e5;
@@ -660,6 +726,9 @@
 }
 .sp-form .toggle i:before {
 	background-color: #2da5da;	
+}
+.sp-form .toggleConfirm i:before {
+	background-color: #2da5da;
 }
 .sp-form .rating label {
 	color: #ccc;
@@ -690,6 +759,7 @@
 .sp-form .radio:hover i,
 .sp-form .checkbox:hover i,
 .sp-form .toggle:hover i,
+.sp-form .toggleConfirm:hover i,
 .sp-form .ui-slider-handle:hover {
 	border-color: #8dc9e5;
 }
@@ -708,7 +778,8 @@
 .sp-form .textarea textarea:focus,
 .sp-form .radio input:focus + i,
 .sp-form .checkbox input:focus + i,
-.sp-form .toggle input:focus + i {
+.sp-form .toggle input:focus + i,
+.sp-form .toggleConfirm input:focus + i{
 	border-color: #2da5da;
 }
 /* ************************************************************************** */
@@ -725,6 +796,9 @@
 .sp-form .toggle input:checked + i {
 	border-color: #2da5da;	
 }
+.sp-form .toggleConfirm input:checked + i {
+	border-color: #2da5da;
+}
 .sp-form .rating input:checked ~ label {
 	color: #2da5da;	
 }
@@ -738,7 +812,9 @@
 .sp-form .radio.state-error i,
 .sp-form .checkbox.state-error i,
 .sp-form .toggle.state-error i,
-.sp-form .toggle.state-error input:checked + i {
+.sp-form .toggle.state-error input:checked + i,
+.sp-form .toggleConfirm.state-error i,
+.sp-form .toggleConfirm.state-error input:checked + i{
 	background: #fff0f0;
 }
 .sp-form .state-error + em {
@@ -764,7 +840,9 @@
 .sp-form .radio.state-success i,
 .sp-form .checkbox.state-success i,
 .sp-form .toggle.state-success i,
-.sp-form .toggle.state-success input:checked + i {
+.sp-form .toggle.state-success input:checked + i,
+.sp-form .toggleConfirm.state-success i,
+.sp-form .toggleConfirm.state-success input:checked + i{
 	background: #f0fff0;
 }
 .sp-form .state-success + em {
@@ -788,6 +866,7 @@
 .sp-form .radio.state-disabled,
 .sp-form .checkbox.state-disabled,
 .sp-form .toggle.state-disabled,
+.sp-form .toggleConfirm.state-disabled,
 .sp-form .button.state-disabled {
 	cursor: default;
 	opacity: 0.5;
@@ -797,7 +876,8 @@
 .sp-form .textarea.state-disabled:hover textarea,
 .sp-form .radio.state-disabled:hover i,
 .sp-form .checkbox.state-disabled:hover i,
-.sp-form .toggle.state-disabled:hover i {
+.sp-form .toggle.state-disabled:hover i,
+.sp-form .toggleConfirm.state-disabled:hover i {
 	border-color: #e5e5e5;
 }
 /* ************************************************************************** */
