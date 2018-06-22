@@ -54,6 +54,24 @@ $(function () {
                         remote: 'Correct captcha is required'
                     }
             },
+        submitHandler: function(form)
+        {
+            $(form).ajaxSubmit(
+                {
+                    beforeSend: function()
+                    {
+                        $('#dropLineForm button[type="submit"]').attr('disabled', true);
+                    },
+                    success: function()
+                    {
+                        $("#dropLineForm").addClass('submited');
+                        $(document).on('click','#refreshDropLineForm',function () {
+                            $("#dropLineForm").removeClass('submited');
+                            $("#dropLineForm").clearForm();
+                        });
+                    }
+                });
+        },
         errorPlacement: function (error, element) {
             error.insertAfter(element.parent());
         }
