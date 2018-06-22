@@ -80,7 +80,7 @@ $_SESSION['captcha_id'] = $str;
     <li id="dropLineId" aria-haspopup="true" class="right">
         <a href="#"><i class="fa fa-envelope"></i>Drop a line<i class="fa fa-indicator fa-chevron-down"></i></a>
         <div id="dropLineListdiv" class="grid-container8">
-            <form action="#" method="post" id="dropLineForm" class="sp-form">
+            <form action="dropLineEmail.php" method="post" id="dropLineForm" class="sp-form">
                 <fieldset>
                     <div class="row">
                         <section class="col col-6">
@@ -121,7 +121,7 @@ $_SESSION['captcha_id'] = $str;
                         </label>
                     </section>
                     <section>
-                        <label class="checkbox"><input type="checkbox" name="copy"><i></i>Send a copy to my e-mail address</label>
+                        <label class="toggleConfirm"><input type="checkbox" name="copy"><i></i>Send a copy to my e-mail address</label>
                     </section>
                     <button type="submit" class="button left">Send message</button>
                 </fieldset>
@@ -135,68 +135,4 @@ $_SESSION['captcha_id'] = $str;
     <!--/ drop me a line -->
 </ul>
 <!--/ Navigation menu -->
-
-<script type="text/javascript">
-    $(function () {
-        // Validation
-        $("#dropLineForm").validate({
-            rules:
-                {
-                    name:
-                        {
-                            required: true
-                        },
-                    email:
-                        {
-                            required: true,
-                            email: true
-                        },
-                    subject:
-                        {
-                            required: true,
-                            minlength: 3
-                        },
-                    message:
-                        {
-                            required: true,
-                            minlength: 3
-                        },
-                    captcha:
-                        {
-                            required: true,
-                            remote: '../resources/captcha/process.php'
-                        }
-                },
-            messages:
-                {
-                    name:
-                        {
-                            required: 'Please enter your name'
-                        },
-                    email:
-                        {
-                            required: 'Please enter your email address',
-                            email: 'Please enter a valid email address'
-                        },
-                    subject:
-                        {
-                            required: 'Please enter a subject',
-                            minlength: 'Please enter a more detailed subject'
-                        },
-                    message:
-                        {
-                            required: 'Please enter a subject',
-                            minlength: 'Please enter a more detailed subject'
-                        },
-                    captcha:
-                        {
-                            required: 'Please enter characters',
-                            remote: 'Correct captcha is required'
-                        }
-                },
-            errorPlacement: function (error, element) {
-                error.insertAfter(element.parent());
-            }
-        });
-    });
-</script>
+<script src="../js/scripts/dropLineValidation.js"></script>
