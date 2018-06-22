@@ -3172,26 +3172,26 @@ readers do not read off random characters that represent icons */
   position: static;
   width: auto; }
 @font-face {
-  font-family: 'Font Awesome 5 Brands';
+  font-family: FontAwesomeBrands;
   font-style: normal;
   font-weight: normal;
   src: url("../../icons/fa-brands-400.eot");
   src: url("../../icons/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../../icons/fa-brands-400.woff2") format("woff2"), url("../../icons/fa-brands-400.woff") format("woff"), url("../../icons/fa-brands-400.ttf") format("truetype"), url("../../icons/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
-  font-family: 'Font Awesome 5 Brands'; }
+  font-family: FontAwesomeBrands; }
 @font-face {
-  font-family: 'Font Awesome 5 Free';
+  font-family: FontAwesome;
   font-style: normal;
   font-weight: 400;
   src: url("../../icons/fa-regular-400.eot");
   src: url("../../icons/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../../icons/fa-regular-400.woff2") format("woff2"), url("../../icons/fa-regular-400.woff") format("woff"), url("../../icons/fa-regular-400.ttf") format("truetype"), url("../../icons/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
-  font-family: 'Font Awesome 5 Free';
+  font-family: FontAwesome;
   font-weight: 400; }
 @font-face {
-  font-family: 'Font Awesome 5 Free';
+  font-family: FontAwesome;
   font-style: normal;
   font-weight: 900;
   src: url("../../icons/fa-solid-900.eot");
@@ -3199,5 +3199,5 @@ readers do not read off random characters that represent icons */
 
 .fa,
 .fas {
-  font-family: 'Font Awesome 5 Free';
+  font-family: FontAwesome;
   font-weight: 900; }

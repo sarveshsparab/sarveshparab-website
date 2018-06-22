@@ -239,7 +239,7 @@
 	border-radius: 50%;
 }
 .sp-form .checkbox input + i:after {
-	content: '\f00c';
+	content: "\f00c";
 	top: -1px;
 	left: -1px;
 	width: 15px;
