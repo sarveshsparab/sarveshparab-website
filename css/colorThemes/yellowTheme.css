@@ -34,6 +34,9 @@
 .sp-form .toggle i:before {
     background-color: #ffc228;
 }
+.sp-form .toggleConfirm i:before {
+    background-color: #ffc228;
+}
 .sp-form .button {
     background-color: #ffc228;
 }
@@ -45,6 +48,7 @@
 .sp-form .radio:hover i,
 .sp-form .checkbox:hover i,
 .sp-form .toggle:hover i,
+.sp-form .toggleConfirm:hover i,
 .sp-form .ui-slider-handle:hover {
     border-color: #ffe782;
 }
@@ -59,7 +63,8 @@
 .sp-form .textarea textarea:focus,
 .sp-form .radio input:focus + i,
 .sp-form .checkbox input:focus + i,
-.sp-form .toggle input:focus + i {
+.sp-form .toggle input:focus + i,
+.sp-form .toggleConfirm input:focus + i{
     border-color: #ffc228;
 }
 
@@ -72,7 +77,8 @@
 }
 .sp-form .radio input:checked + i,
 .sp-form .checkbox input:checked + i,
-.sp-form .toggle input:checked + i {
+.sp-form .toggle input:checked + i,
+.sp-form .toggleConfirm input:checked + i{
     border-color: #ffc228;
 }
 .sp-form .rating input:checked ~ label {
