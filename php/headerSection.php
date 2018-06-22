@@ -80,7 +80,7 @@ $_SESSION['captcha_id'] = $str;
     <li id="dropLineId" aria-haspopup="true" class="right">
         <a href="#"><i class="fa fa-envelope"></i>Drop a line<i class="fa fa-indicator fa-chevron-down"></i></a>
         <div id="dropLineListdiv" class="grid-container8">
-            <form action="dropLineEmail.php" method="post" id="dropLineForm" class="sp-form">
+            <form action="php/dropLineEmail.php" method="post" id="dropLineForm" class="sp-form">
                 <fieldset>
                     <div class="row">
                         <section class="col col-6">
@@ -126,6 +126,7 @@ $_SESSION['captcha_id'] = $str;
                     <button type="submit" class="button left">Send message</button>
                 </fieldset>
                 <div class="message">
+                    <i id="refreshDropLineForm" title="Refresh" class="fa fa-sync-alt" style="text-align: right; margin: unset; border: unset; line-height: unset; height: unset; width: unset; font-size: 15px"></i>
                     <i class="fa fa-check"></i>
                     <p>Your message was successfully sent!</p>
                 </div>
