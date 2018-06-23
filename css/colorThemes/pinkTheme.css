@@ -97,10 +97,32 @@
 /* ************************************************************************** */
 
 /* Work In-Progress */
-.blogSectionActive > .wipHoldOn{
+.blogSection > .wipHoldOn{
     color: #d2477e;
 }
-.blogSectionActive > .wipIcons{
+.blogSection > .wipIcons{
     color: #d2477e;
+}
+/* ************************************************************************** */
+
+/* Home Section */
+.homeVR {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #d2477e , rgba(0, 0, 0, 0));
+}
+.topQuoteHome blockquote p:first-child:before{
+    color: #df9ab7;
+}
+.topQuoteHome blockquote footer{
+    color: #d2477e;
+}
+.resumeDownloadBtn {
+    border: 2px solid #d2477e;
+    color: #d2477e;
+}
+.resumeDownloadBtn .resumeDownloadBtnIcon {
+    border-left: 1px solid #d2477e;
+}
+.resumeDownloadBtn:after {
+    background-color: #d2477e;
 }
 /* ************************************************************************** */

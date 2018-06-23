@@ -99,7 +99,26 @@
 .blogSectionActive > .wipHoldOn{
     color: #222;
 }
-.blogSectionActive > .wipIcons{
+/* ************************************************************************** */
+
+/* Home Section */
+.homeVR {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #222 , rgba(0, 0, 0, 0));
+}
+.topQuoteHome blockquote p:first-child:before{
+    color: #909090;
+}
+.topQuoteHome blockquote footer{
     color: #222;
+}
+.resumeDownloadBtn {
+    border: 2px solid #222;
+    color: #222;
+}
+.resumeDownloadBtn .resumeDownloadBtnIcon {
+    border-left: 1px solid #222;
+}
+.resumeDownloadBtn:after {
+    background-color: #222;
 }
 /* ************************************************************************** */
