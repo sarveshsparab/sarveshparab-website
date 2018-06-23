@@ -1,4 +1,8 @@
 /* Defaults */
+
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
 @font-face {
     font-family: 'BebasNeue';
     src: url('../fonts/BebasNeue-webfont.eot');
@@ -81,8 +85,16 @@
     float: left;
     height: 100%;
     width: 75%;
-    overflow-wrap: break-word;
-    background-color: #43bf43;
+    margin-top: 25px;
+    overflow-wrap: break-spaces;
+}
+.leftOrTopHome .cloudHomeDiv{
+    background-color: #d2477e;
+    width: 90%;
+    height: 70vh;
+    border: 2px #000;
+    margin: 20px auto;
+    text-align: center;
 }
 .rightOrBottomHome{
     display: block;
@@ -101,11 +113,15 @@
     margin: 20px auto;
 }
 .rightOrBottomHome h1{
-
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .rightOrBottomHome h2{
     margin-bottom: 5px;
     margin-top: 5px;
+    font-family: 'Poor Story', cursive;
 }
 .resumeDownloadBtn {
     border-radius: 7px;
@@ -194,5 +210,61 @@
     font-family: BebasNeue, Arial, sans-serif;
     text-align: center;
     font-size: 40px;
+}
+/* ************************************************** */
+
+/* Responsive CSS */
+/* *** Mobiles */
+@media screen and (max-width: 767px) {
+    .topQuoteHome{
+        width: 100%;
+    }
+    .topQuoteHome blockquote footer {
+        margin-right: 10px;
+    }
+    .leftOrTopHome{
+        height: 75%;
+        width: 100%;
+    }
+    .homeVR{
+        width: 100%;
+        top: unset;
+        left: unset;
+        right: unset;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #2da5da , rgba(0, 0, 0, 0));
+    }
+    .rightOrBottomHome{
+        float: unset;
+        width: 100%;
+        margin: 0 auto 100px auto;
+    }
+}
+
+/* *** Tablets */
+@media screen and (max-width: 1000px) {
+    .topQuoteHome{
+        width: 100%;
+    }
+    .topQuoteHome blockquote footer {
+        margin-right: 10px;
+    }
+    .leftOrTopHome{
+        height: 75%;
+        width: 100%;
+    }
+    .homeVR{
+        width: 100%;
+        top: unset;
+        left: unset;
+        right: unset;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #2da5da , rgba(0, 0, 0, 0));
+    }
+    .rightOrBottomHome{
+        float: unset;
+        width: 100%;
+        margin: 0 auto 100px auto;
+    }
 }
 /* ************************************************** */
