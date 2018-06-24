@@ -97,7 +97,6 @@ a:hover {
     text-align: center;
     vertical-align: middle;
     top: 50%;
-    display: none;
 }
 
 @media screen and (max-width: 1000px) {

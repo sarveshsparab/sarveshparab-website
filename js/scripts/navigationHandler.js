@@ -1,5 +1,6 @@
 /* Basic navigation clicks */
 $(document).on('click','#homeId', function () {
+    $("#homeSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
     $(".activeSection").toggleClass("activeSection inactiveSection");
     $("#homeSectionDiv").removeClass("inactiveSection");
     $("#homeSectionDiv").addClass("activeSection");
@@ -8,16 +9,19 @@ $(document).on('click','#resumeId', function () {
 
 });
 $(document).on('click','#projectsId', function () {
-    alert("You clicked Projects");
+    $("#projectsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
+    $(".activeSection").toggleClass("activeSection inactiveSection");
+    $("#projectsSectionDiv").load("../../html/projectsSection.html");
+    $("#projectsSectionDiv").removeClass("inactiveSection");
+    $("#projectsSectionDiv").addClass("activeSection");
 });
 $(document).on('click','#blogId', function () {
+    $("#blogSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
     $(".activeSection").toggleClass("activeSection inactiveSection");
     $("#blogSectionDiv").load("../../html/blogSection.html");
     $("#blogSectionDiv").removeClass("inactiveSection");
     $("#blogSectionDiv").addClass("activeSection");
 });
-
-
 $(document).on('mouseover click','#contactMeId', function () {
     $("#contactMeListdiv").load("../../html/contactMeHoverMenu.html");
 });
@@ -25,30 +29,66 @@ $(document).on('mouseover click','#contactMeId', function () {
 
 /* Sub-Level Navigation Menus */
 $(document).on('click','#experienceId', function () {
-    alert("You clicked experience");
+    $("#experienceSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
+    $(".activeSection").toggleClass("activeSection inactiveSection")
+    $("#experienceSectionDiv").load("../../html/experienceSection.html");
+    $("#experienceSectionDiv").removeClass("inactiveSection");
+    $("#experienceSectionDiv").addClass("activeSection");
 });
 $(document).on('click','#educationId', function () {
-    alert("You clicked education");
+    $("#educationSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
+    $(".activeSection").toggleClass("activeSection inactiveSection");
+    $("#educationSectionDiv").load("../../html/educationSection.html");
+    $("#educationSectionDiv").removeClass("inactiveSection");
+    $("#educationSectionDiv").addClass("activeSection");
 });
 $(document).on('click','#webSkillId', function () {
-    alert("You clicked webSkill");
+    $("#skillsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
+    $(".activeSection").toggleClass("activeSection inactiveSection");
+    $("#skillsSectionDiv").load("../../php/skillsSection.php?skillType=web");
+    $("#skillsSectionDiv").removeClass("inactiveSection");
+    $("#skillsSectionDiv").addClass("activeSection");
 });
 $(document).on('click','#languagesSkillId', function () {
-    alert("You clicked languagesSkill");
+    $("#skillsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
+    $(".activeSection").toggleClass("activeSection inactiveSection");
+    $("#skillsSectionDiv").load("../../php/skillsSection.php?skillType=languages");
+    $("#skillsSectionDiv").removeClass("inactiveSection");
+    $("#skillsSectionDiv").addClass("activeSection");
 });
 $(document).on('click','#domainsSkillId', function () {
-    alert("You clicked domainsSkill");
+    $("#skillsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
+    $(".activeSection").toggleClass("activeSection inactiveSection");
+    $("#skillsSectionDiv").load("../../php/skillsSection.php?skillType=domains");
+    $("#skillsSectionDiv").removeClass("inactiveSection");
+    $("#skillsSectionDiv").addClass("activeSection");
 });
 $(document).on('click','#databasesSkillId', function () {
-    alert("You clicked databasesSkill");
+    $("#skillsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
+    $(".activeSection").toggleClass("activeSection inactiveSection");
+    $("#skillsSectionDiv").load("../../php/skillsSection.php?skillType=databases");
+    $("#skillsSectionDiv").removeClass("inactiveSection");
+    $("#skillsSectionDiv").addClass("activeSection");
 });
 $(document).on('click','#frameworksSkillId', function () {
-    alert("You clicked frameworksSkill");
+    $("#skillsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
+    $(".activeSection").toggleClass("activeSection inactiveSection");
+    $("#skillsSectionDiv").load("../../php/skillsSection.php?skillType=frameworks");
+    $("#skillsSectionDiv").removeClass("inactiveSection");
+    $("#skillsSectionDiv").addClass("activeSection");
 });
 $(document).on('click','#platformsSkillId', function () {
-    alert("You clicked platformsSkill");
+    $("#skillsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
+    $(".activeSection").toggleClass("activeSection inactiveSection");
+    $("#skillsSectionDiv").load("../../php/skillsSection.php?skillType=platforms");
+    $("#skillsSectionDiv").removeClass("inactiveSection");
+    $("#skillsSectionDiv").addClass("activeSection");
 });
 $(document).on('click','#toolsSkillId', function () {
-    alert("You clicked toolsSkill");
+    $("#skillsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
+    $(".activeSection").toggleClass("activeSection inactiveSection");
+    $("#skillsSectionDiv").load("../../php/skillsSection.php?skillType=tools");
+    $("#skillsSectionDiv").removeClass("inactiveSection");
+    $("#skillsSectionDiv").addClass("activeSection");
 });
 /* ******************************************** */
