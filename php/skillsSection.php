@@ -1,0 +1,1 @@
+<h1>Skill : <?php echo $_GET['skillType']; ?></h1>
