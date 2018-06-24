@@ -1,0 +1,9 @@
+<h1>Skill : <span id="skillType"></span></h1>
+
+<script type="text/javascript">
+    function getParam(name){
+        if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+            return decodeURIComponent(name[1]);
+    }
+    document.getElementById("skillType").innerHTML=getParam("skillType");
+</script>
