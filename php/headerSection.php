@@ -20,22 +20,22 @@ $_SESSION['captcha_id'] = $str;
         <div class="grid-container2">
             <ul class="sp-menu sp-menu-response-to-icons">
                 <li>
-                    <a href="#"><i class="fa fa-lightbulb"></i>Experience</a>
+                    <a id="experienceId" href="#"><i class="fa fa-lightbulb"></i>Experience</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-book"></i>Education</a>
+                    <a id="educationId" href="#"><i class="fa fa-book"></i>Education</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-tasks"></i>Skills<i class="fa fa-indicator fa-chevron-right"></i></a>
                     <div class="grid-container2">
                         <ul class="sp-menu sp-menu-response-to-icons">
-                            <li><a href="#"><i class="fa fa-globe"></i>Web</a></li>
-                            <li><a href="#"><i class="fa fa-code"></i>Languages</a></li>
-                            <li><a href="#"><i class="fab fa-connectdevelop"></i>Domains</a></li>
-                            <li><a href="#"><i class="fa fa-database"></i>Databases</a></li>
-                            <li><a href="#"><i class="fa fa-table"></i>Frameworks</a></li>
-                            <li><a href="#"><i class="fa fa-cloud"></i>Platforms</a></li>
-                            <li><a href="#"><i class="fa fa-wrench"></i>Tools</a></li>
+                            <li><a id="webSkillId" href="#"><i class="fa fa-globe"></i>Web</a></li>
+                            <li><a id="languagesSkillId" href="#"><i class="fa fa-code"></i>Languages</a></li>
+                            <li><a id="domainsSkillId" href="#"><i class="fab fa-connectdevelop"></i>Domains</a></li>
+                            <li><a id="databasesSkillId" href="#"><i class="fa fa-database"></i>Databases</a></li>
+                            <li><a id="frameworksSkillId" href="#"><i class="fa fa-table"></i>Frameworks</a></li>
+                            <li><a id="platformsSkillId" href="#"><i class="fa fa-cloud"></i>Platforms</a></li>
+                            <li><a id="toolsSkillId" href="#"><i class="fa fa-wrench"></i>Tools</a></li>
                         </ul>
                     </div>
                 </li>
