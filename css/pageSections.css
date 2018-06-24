@@ -89,12 +89,14 @@
     overflow-wrap: break-spaces;
 }
 .leftOrTopHome .cloudHomeDiv{
-    background-color: #d2477e;
     width: 90%;
     height: 70vh;
     border: 2px #000;
     margin: 20px auto;
     text-align: center;
+}
+.leftOrTopHome .cloudHomeDiv .mySkillsCloudCanvas{
+    width: 100%;
 }
 .rightOrBottomHome{
     display: block;
