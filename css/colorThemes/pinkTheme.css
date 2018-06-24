@@ -125,4 +125,7 @@
 .resumeDownloadBtn:after {
     background-color: #d2477e;
 }
+.mySkillsCloudCanvas a {
+    color: #d2477e;
+}
 /* ************************************************************************** */
