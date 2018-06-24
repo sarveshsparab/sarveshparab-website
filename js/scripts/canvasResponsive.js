@@ -1,9 +1,18 @@
 /* To Begin rendering the canvas */
 window.onload = function() {
     try {
-        TagCanvas.Start('mySkillsCloudCanvas');
+        TagCanvas.Start('mySkillsCloudCanvas','',{
+            outlineMethod: 'none',
+            noSelect: true,
+            shuffleTags: true,
+            reverse: true,
+            depth: 0.8,
+            maxSpeed: 0.05,
+            textFont: null,
+            textColour: null,
+            weight: true,
+        });
     } catch(e) {
-        // something went wrong, hide the canvas container
         document.getElementById('mySkillsCloud').style.display = 'none';
     }
 };
