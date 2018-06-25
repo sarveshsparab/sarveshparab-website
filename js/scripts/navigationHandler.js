@@ -10,7 +10,13 @@ $(document).on('click','#resumeId', function () {
 $(document).on('click','#projectsId', function () {
     $("#projectsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
     $(".activeSection").toggleClass("activeSection inactiveSection");
-    $("#projectsSectionDiv").load("../../html/projectsSection.html");
+    $("#projectsSectionDiv").load("../../html/projectsSection.html", function() {
+        $('.cd-timeline__read-more').on('click',function(){
+            $('.modal-body').load('../../php/getReadMoreContent.php?type=prj',function(){
+                $('#readMoreModal').modal({show:true});
+            });
+        });
+    });
     $("#projectsSectionDiv").removeClass("inactiveSection");
     $("#projectsSectionDiv").addClass("activeSection");
 });
@@ -29,15 +35,28 @@ $(document).on('mouseover click','#contactMeId', function () {
 /* Sub-Level Navigation Menus */
 $(document).on('click','#experienceId', function () {
     $("#experienceSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
-    $(".activeSection").toggleClass("activeSection inactiveSection")
-    $("#experienceSectionDiv").load("../../html/experienceSection.html");
+    $(".activeSection").toggleClass("activeSection inactiveSection");
+    $("#experienceSectionDiv").load("../../html/experienceSection.html", function() {
+        $('.cd-timeline__read-more').on('click',function(){
+            var id=this.id;
+            $('.modal-body').load('../../php/getReadMoreContent.php?type=exp&id='+id,function(){
+                $('#readMoreModal').modal({show:true});
+            });
+        });
+    });
     $("#experienceSectionDiv").removeClass("inactiveSection");
     $("#experienceSectionDiv").addClass("activeSection");
 });
 $(document).on('click','#educationId', function () {
     $("#educationSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
     $(".activeSection").toggleClass("activeSection inactiveSection");
-    $("#educationSectionDiv").load("../../html/educationSection.html");
+    $("#educationSectionDiv").load("../../html/educationSection.html", function() {
+        $('.cd-timeline__read-more').on('click',function(){
+            $('.modal-body').load('../../php/getReadMoreContent.php?type=edu',function(){
+                $('#readMoreModal').modal({show:true});
+            });
+        });
+    });
     $("#educationSectionDiv").removeClass("inactiveSection");
     $("#educationSectionDiv").addClass("activeSection");
 });
