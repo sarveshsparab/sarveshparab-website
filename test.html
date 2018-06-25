@@ -19,6 +19,9 @@
     <script src="js/jquery/jquery.form.min.js"></script>
     <script src="js/jquery/jquery.validate.min.js"></script>
     <script src="js/jquery/jquery.placeholder.min.js"></script>
+    <script src="js/jquery/jquery.modal.js"></script>
+
+    <script src="js/bootstrap/bootstrap.min.js"></script>
 
     <script src="js/scripts/loadLandingPageSections.js"></script>
     <script src="js/scripts/themeChanger.js"></script>
@@ -26,6 +29,7 @@
     <script src="js/scripts/navigationHandler.js"></script>
     <script src="js/scripts/tagcanvas.js"></script>
     <script src="js/scripts/canvasResponsive.js"></script>
+    <script src="js/scripts/timelineHandler.js"></script>
 
     <!-- Google AdSense code -->
     <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -62,21 +66,7 @@
             </div>
             <div id="leftOrTopHomeDiv" class="leftOrTopHome">
                 <div id="mySkillsCloud" class="cloudHomeDiv">
-                    <canvas id="mySkillsCloudCanvas" class="mySkillsCloudCanvas">
-                        <a>Google</a>
-                        <a>Fish</a>
-                        <a>Chips</a>
-                        <a>Salt</a>
-                        <a>Vinegar</a>
-                        <a>Sugar</a>
-                        <a>Pepper</a>
-                        <a>Choco</a>
-                        <a>Ginger</a>
-                        <a>Garlic</a>
-                        <a>Peanuts</a>
-                        <a>Cashew</a>
-                        <a>Almonds</a>
-                    </canvas>
+                    <canvas id="mySkillsCloudCanvas" class="mySkillsCloudCanvas"></canvas>
                 </div>
             </div>
             <div class="homeVR">&nbsp;</div>
@@ -100,5 +90,24 @@
     <div id="adsContentDivId" class="googleAdsDisabled"></div>
 </main>
 <footer id="spFooterId"></footer>
+
+<!-- Read More Modals -->
+<div class="modal fade" id="readMoreModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Read More Modals -->
+
 </body>
 </html>
