@@ -165,3 +165,22 @@
     }
 }
 /* ************************************************************************** */
+
+/* Bootstrap Modal */
+.btn-default {
+    background-color: #d2477e;
+}
+.btn-default.focus,
+.btn-default:focus {
+    background-color: #df9ab7;
+}
+.btn-default:hover {
+    background-color: #df9ab7;
+}
+.modal-footer {
+    border-top: 1px solid #d2477e
+}
+.modal-header {
+    border-bottom: 1px solid #d2477e;
+}
+/* ************************************************************************** */
