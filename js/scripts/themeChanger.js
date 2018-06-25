@@ -26,7 +26,7 @@ $(document).on('click','#yellowThemeId', function () {
 /* ******************************************** */
 
 /* Bg Image activation logic*/
-$(document).on('change','#bgToggleID', function () {
+/* $(document).on('change','#bgToggleID', function () {
     let $spBodyIdSelector =  $("#spBodyId");
     if($(this).is(":checked")) {
         $spBodyIdSelector.removeClass("sp-bg-color");
@@ -35,5 +35,5 @@ $(document).on('change','#bgToggleID', function () {
         $spBodyIdSelector.removeClass("sp-bg-img");
         $spBodyIdSelector.addClass("sp-bg-color");
     }
-});
+}); */
 /* ******************************************** */
