@@ -92,11 +92,10 @@ a:hover {
 
 .jqueryLoader{
     width: inherit;
-    position: absolute;
     font-size: 30px;
     text-align: center;
-    vertical-align: middle;
-    top: 50%;
+    display: block;
+    line-height: 100vh;
 }
 
 @media screen and (max-width: 1000px) {
