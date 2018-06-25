@@ -314,7 +314,7 @@ body {
         position: absolute;
         width: 100%;
         left: 122%;
-        top: 40px;
+        top: 120px;
         font-size: 24px;
     }
 
@@ -458,6 +458,7 @@ body {
     .cd-timeline__name{
         font-size: 16px;
         padding: unset;
+        width: 130px;
     }
 
     .cd-timeline__sym span{
