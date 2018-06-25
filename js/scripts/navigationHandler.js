@@ -1,6 +1,5 @@
 /* Basic navigation clicks */
 $(document).on('click','#homeId', function () {
-    $("#homeSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
     $(".activeSection").toggleClass("activeSection inactiveSection");
     $("#homeSectionDiv").removeClass("inactiveSection");
     $("#homeSectionDiv").addClass("activeSection");
