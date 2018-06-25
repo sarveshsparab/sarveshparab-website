@@ -164,8 +164,8 @@ body {
     background: #edfaff;
     border-radius: 0.25em;
     padding: 1em;
-    -webkit-box-shadow: 0 3px 0 #d7e4ed;
-    box-shadow: 0 3px 0 #d7e4ed;
+    -webkit-box-shadow: 0 3px 0 #8dc9e5;
+    box-shadow: 0 3px 0 #8dc9e5;
 }
 
 .cd-timeline__content:after {
@@ -258,11 +258,11 @@ body {
         font-size: 13px;
     }
     .cd-timeline__date{
-        font-size: 17px;
+        font-size: 15px;
         padding: unset;
     }
     .cd-timeline__name{
-        font-size: 16px;
+        font-size: 15px;
         padding: unset;
     }
 
@@ -272,7 +272,7 @@ body {
         top: 50%;
         margin-top: -11px;
         text-align: center;
-        font-size: 28px;
+        font-size: 21px;
         color: #fff;
         font-family: 'Russo One', sans-serif;
     }

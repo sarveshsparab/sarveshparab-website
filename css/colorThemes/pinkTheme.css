@@ -129,3 +129,39 @@
     color: #d2477e;
 }
 /* ************************************************************************** */
+
+/* Timeline */
+.cd-timeline__container::before {
+    background: #df9ab7;
+}
+.cd-timeline__sym {
+    background-color: #d2477e;
+}
+.cd-timeline__content {
+    background: rgba(223, 154, 183, 0.24);
+    -webkit-box-shadow: 0 3px 0 #df9ab7;
+    box-shadow: 0 3px 0 #df9ab7;
+}
+.cd-timeline__read-more {
+    background: #d2477e;
+}
+.cd-timeline__read-more:hover {
+    background-color: #df9ab7;
+}
+.cd-timeline__date {
+    color: #d2477e;
+}
+@media only screen and (min-width: 1170px) {
+    .cd-timeline__sym {
+        background-color: #d2477e;
+    }
+}
+@media only screen and (min-width: 1170px) {
+    .cd-timeline__content::before {
+        border-left-color: #d2477e;
+    }
+    .cd-timeline__block:nth-child(even) .cd-timeline__content::before {
+        border-right-color: #d2477e;
+    }
+}
+/* ************************************************************************** */
