@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poor+Story');
 @import url('https://fonts.googleapis.com/css?family=Anton');
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 @font-face {
     font-family: 'BebasNeue';
@@ -111,6 +110,7 @@
 }
 .leftOrTopHome .cloudHomeDiv .mySkillsCloudCanvas{
     width: 100%;
+    border-radius: 20px;
 }
 .mySkillsCloudCanvas a {
     color: #000;
