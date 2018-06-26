@@ -19,7 +19,9 @@
     <script async src="js/bootstrap/bootstrap.min.js"></script>
     <script async src="js/images/imagesloaded.pkgd.min.js"></script>
 
-    <script src="js/scripts/loadLandingPageSections.min.js"></script>
+    <script type="text/javascript">
+        $(function(){$("#spHeaderId").load("../../php/headerSection.php"),$("#spFooterId").load("../../html/footerSection.min.html")});
+    </script>
     <script async src="js/scripts/themeChanger.min.js"></script>
     <script src="js/scripts/navigationHandler.min.js"></script>
     <script src="js/scripts/tagcanvas.min.js"></script>
