@@ -11,11 +11,29 @@ $(document).on('click','#projectsId', function () {
     $("#projectsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
     $(".activeSection").toggleClass("activeSection inactiveSection");
     $("#projectsSectionDiv").load("../../html/projectsSection.html", function() {
-        $('.cd-timeline__read-more').on('click',function(){
-            $('.modal-body').load('../../php/getReadMoreContent.php?type=prj',function(){
-                $('#readMoreModal').modal({show:true});
-            });
-        });
+        function resizeGridItem(item) {
+            grid = document.getElementsByClassName("grid")[0];
+            rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+            rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+            rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
+            item.style.gridRowEnd = "span " + rowSpan;
+        }
+        function resizeAllGridItems() {
+            allItems = document.getElementsByClassName("item");
+            for (x = 0; x < allItems.length; x++) {
+                resizeGridItem(allItems[x]);
+            }
+        }
+        function resizeInstance(instance) {
+            item = instance.elements[0];
+            resizeGridItem(item);
+        }
+        window.onload = resizeAllGridItems();
+        window.addEventListener("resize", resizeAllGridItems);
+        allItems = document.getElementsByClassName("item");
+        for (x = 0; x < allItems.length; x++) {
+            imagesLoaded(allItems[x], resizeInstance);
+        }
     });
     $("#projectsSectionDiv").removeClass("inactiveSection");
     $("#projectsSectionDiv").addClass("activeSection");
@@ -52,7 +70,8 @@ $(document).on('click','#educationId', function () {
     $(".activeSection").toggleClass("activeSection inactiveSection");
     $("#educationSectionDiv").load("../../html/educationSection.html", function() {
         $('.cd-timeline__read-more').on('click',function(){
-            $('.modal-body').load('../../php/getReadMoreContent.php?type=edu',function(){
+            var id=this.id;
+            $('.modal-body').load('../../php/getReadMoreContent.php?type=edu&id='+id,function(){
                 $('#readMoreModal').modal({show:true});
             });
         });
