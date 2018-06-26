@@ -216,7 +216,8 @@ a:hover {
 .modal-dialog {
     position: relative;
     width: auto;
-    margin: 10px
+    margin: 10px;
+    overflow-y: initial !important
 }
 
 .modal-content {
@@ -266,6 +267,8 @@ a:hover {
     position: relative;
     padding: 16px;
     font-family: 'Abel', sans-serif;
+    height: 250px;
+    overflow-y: auto;
 }
 
 .modal-footer {
