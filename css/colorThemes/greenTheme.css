@@ -184,3 +184,21 @@
     border-bottom: 1px solid #43bf43;
 }
 /* ************************************************************************** */
+
+/* Tiles Layout */
+.title {
+    background-color: #43bf43;
+}
+.desc hr{
+    border-color: #43bf43;
+}
+.tileInfo span {
+    color: #43bf43;
+}
+.tileReadMore a {
+    background: #43bf43;
+}
+.tileReadMore a:hover {
+    background-color: #91e393;
+}
+/* ************************************************************************** */
