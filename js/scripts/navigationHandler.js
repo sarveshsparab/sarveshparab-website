@@ -34,6 +34,12 @@ $(document).on('click','#projectsId', function () {
         for (x = 0; x < allItems.length; x++) {
             imagesLoaded(allItems[x], resizeInstance);
         }
+        $('.tileReadMore').on('click',function(){
+            var id=this.id;
+            $('.modal-body').load('../../php/getReadMoreContent.php?type=prj&id='+id,function(){
+                $('#readMoreModal').modal({show:true});
+            });
+        });
     });
     $("#projectsSectionDiv").removeClass("inactiveSection");
     $("#projectsSectionDiv").addClass("activeSection");
