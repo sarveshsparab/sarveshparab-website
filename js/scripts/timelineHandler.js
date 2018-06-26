@@ -1,5 +1,4 @@
 (function(){
-    // Vertical Timeline - by CodyHouse.co
     function VerticalTimeline( element ) {
         this.element = element;
         this.blocks = this.element.getElementsByClassName("js-cd-block");
@@ -10,7 +9,6 @@
     };
 
     VerticalTimeline.prototype.hideBlocks = function() {
-        //hide timeline blocks which are outside the viewport
         if ( !"classList" in document.documentElement ) {
             return;
         }

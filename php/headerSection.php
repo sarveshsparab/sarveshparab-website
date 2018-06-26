@@ -123,4 +123,4 @@ $_SESSION['captcha_id'] = $str;
     <!--/ drop me a line -->
 </ul>
 <!--/ Navigation menu -->
-<script src="../js/scripts/dropLineValidation.js"></script>
+<script src="../js/scripts/dropLineValidation.min.js"></script>
