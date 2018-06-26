@@ -1,6 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=Abel');
-@import url('https://fonts.googleapis.com/css?family=Russo+One');
-@import url('https://fonts.googleapis.com/css?family=Jura:500');
+/* abel-regular - latin */
+@font-face {
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/abel-v8-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Abel Regular'), local('Abel-Regular'),
+    url('../fonts/abel-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/abel-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/abel-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/abel-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/abel-v8-latin-regular.svg#Abel') format('svg'); /* Legacy iOS */
+}
+
+/* russo-one-regular - latin */
+@font-face {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/russo-one-v6-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Russo One'), local('RussoOne-Regular'),
+    url('../fonts/russo-one-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/russo-one-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/russo-one-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/russo-one-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/russo-one-v6-latin-regular.svg#RussoOne') format('svg'); /* Legacy iOS */
+}
+
+/* jura-regular - latin */
+@font-face {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jura-v9-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Jura Regular'), local('Jura-Regular'),
+    url('../fonts/jura-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/jura-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/jura-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/jura-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/jura-v9-latin-regular.svg#Jura') format('svg'); /* Legacy iOS */
+}
+/* jura-500 - latin */
+@font-face {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/jura-v9-latin-500.eot'); /* IE9 Compat Modes */
+    src: local('Jura Medium'), local('Jura-Medium'),
+    url('../fonts/jura-v9-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/jura-v9-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/jura-v9-latin-500.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/jura-v9-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/jura-v9-latin-500.svg#Jura') format('svg'); /* Legacy iOS */
+}
 
 *, *::after, *::before {
     -webkit-box-sizing: border-box;
