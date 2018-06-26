@@ -235,8 +235,8 @@
 /* ************************************************** */
 
 /* Responsive CSS */
-/* *** Mobiles */
-@media screen and (max-width: 767px) {
+/* *** Tablets */
+@media screen and (max-width: 1000px) {
     .topQuoteHome{
         width: 100%;
     }
@@ -261,9 +261,8 @@
         margin: 0 auto 100px auto;
     }
 }
-
-/* *** Tablets */
-@media screen and (max-width: 1000px) {
+/* *** Mobiles */
+@media screen and (max-width: 767px) {
     .topQuoteHome{
         width: 100%;
     }

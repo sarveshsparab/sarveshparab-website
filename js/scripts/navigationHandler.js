@@ -88,7 +88,15 @@ $(document).on('click','#educationId', function () {
 $(document).on('click','#webSkillId', function () {
     $("#skillsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
     $(".activeSection").toggleClass("activeSection inactiveSection");
-    $("#skillsSectionDiv").load("../../php/skillsSection.php?skillType=web");
+    $("#skillsSectionDiv").load("../../php/skillsSection.php?skillType=web", function () {
+        jQuery(document).ready(function(){
+            jQuery('.skillbar').each(function(){
+                jQuery(this).find('.skillbar-bar').animate({
+                    width:jQuery(this).attr('data-percent')
+                },6000);
+            });
+        });
+    });
     $("#skillsSectionDiv").removeClass("inactiveSection");
     $("#skillsSectionDiv").addClass("activeSection");
 });
