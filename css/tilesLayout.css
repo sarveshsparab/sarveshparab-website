@@ -55,10 +55,21 @@
 .tileInfo a{
     text-decoration: none;
     color: #404040;
+    padding-right: 10px;
+    border-right: 1px solid #404040;
 }
 .tileInfo i:hover {
     color: #aaaaaa;
     text-decoration: none;
+}
+.tileInfo span{
+    margin-left: 5px;
+    font-size: 18px;
+    color: #2da5da;
+    font-family: 'Jura', sans-serif;
+}
+.tileInfo span i{
+    color: #404040;
 }
 .tileReadMore{
     display: inline-block;
