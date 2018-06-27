@@ -1,23 +1,36 @@
 /* To Begin rendering the canvas */
 window.onload = function() {
-    try {
-        popWords();
-        TagCanvas.Start('mySkillsCloudCanvas','',{
-            outlineMethod: 'none',
-            noSelect: true,
-            shuffleTags: true,
-            reverse: true,
-            depth: 0.8,
-            maxSpeed: 0.05,
-            textFont: '"Quicksand", sans-serif',
-            textColour: null,
-            weight: true,
-            zoomMax: 4.0,
-            zoomMin: 1.0,
-        });
-    } catch(e) {
-        document.getElementById('mySkillsCloud').style.display = 'none';
-    }
+    $.ajax({
+        url: '../../php/content/fetchTags.php',
+        success: function (result) {
+            $("#mySkillsCloudCanvas").html('<div id="jqueryLoaderId" class="jqueryLoader" style="line-height: unset"><i class="fa fa-spin fa-spinner"></i></div>');
+            if (result == 'ERROR') {
+                console.error("Error : No data returned from the db | Result : " + result);
+            } else {
+                $("#mySkillsCloudCanvas").html(result);
+                try {
+                    TagCanvas.Start('mySkillsCloudCanvas','',{
+                        outlineMethod: 'none',
+                        noSelect: true,
+                        shuffleTags: true,
+                        reverse: true,
+                        depth: 0.8,
+                        maxSpeed: 0.05,
+                        textFont: '"Quicksand", sans-serif',
+                        textColour: null,
+                        weight: true,
+                        zoomMax: 4.0,
+                        zoomMin: 1.0,
+                    });
+                } catch(e) {
+                    document.getElementById('mySkillsCloud').style.display = 'none';
+                }
+            }
+        },
+        error: function () {
+            console.error("Error : In AJAX call for fetching Tags for cloud");
+        }
+    });
 };
 
 /* To make the canvas behave responsively */
@@ -31,8 +44,3 @@ $(document).ready(function () {
         resize();
     });
 });
-
-/* Cloud words/tags population */
-function popWords() {
-    $("#mySkillsCloudCanvas").html('<a>Google</a><a>Fish</a><a>Chips</a><a>Salt</a><a>Vinegar</a><a>Sugar</a><a>Pepper</a><a>Choco</a><a>Ginger</a><a>Garlic</a><a>Peanuts</a><a>Cashew</a><a>Almonds</a>');
-}
