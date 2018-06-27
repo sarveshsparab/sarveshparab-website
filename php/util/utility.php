@@ -6,4 +6,10 @@ function handleDesc($descStr){
     return $descStrArray;
 }
 
+function extractID($idStr){
+    $idStr = @trim($idStr);
+    $idStrArray = explode('_', $idStr);
+    return $idStrArray[1];
+}
+
 ?>
