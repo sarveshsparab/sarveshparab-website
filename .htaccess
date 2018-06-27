@@ -53,3 +53,17 @@ AddOutputFilterByType DEFLATE text/xml
              Header append Vary: Accept-Encoding
           </FilesMatch>
 </IfModule>
+
+AddDefaultCharset UTF-8
+
+<IfModule mod_headers.c>
+Header always set X-FRAME-OPTIONS "DENY"
+</IfModule>
+
+<IfModule mod_headers.c>
+Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+</IfModule>
