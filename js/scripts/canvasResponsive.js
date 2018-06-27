@@ -12,6 +12,8 @@ window.onload = function() {
             textFont: null,
             textColour: null,
             weight: true,
+            zoomMax: 4.0,
+            zoomMin: 1.0,
         });
     } catch(e) {
         document.getElementById('mySkillsCloud').style.display = 'none';
