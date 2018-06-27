@@ -9,7 +9,7 @@ window.onload = function() {
             reverse: true,
             depth: 0.8,
             maxSpeed: 0.05,
-            textFont: null,
+            textFont: '"Quicksand", sans-serif',
             textColour: null,
             weight: true,
             zoomMax: 4.0,
