@@ -36,7 +36,7 @@ $(document).on('click','#projectsId', function () {
         }
         $('.tileReadMore').on('click',function(){
             var id=this.id;
-            $('.modal-body').load('../../php/getReadMoreContent.php?type=prj&id='+id,function(){
+            $('.modal-body').load('../../php/content/getReadMoreContent.php?type=prj&id='+id,function(){
                 $('#readMoreModal').modal({show:true});
             });
         });
@@ -63,7 +63,7 @@ $(document).on('click','#experienceId', function () {
     $("#experienceSectionDiv").load("../../html/experienceSection.html", function() {
         $('.cd-timeline__read-more').on('click',function(){
             var id=this.id;
-            $('.modal-body').load('../../php/getReadMoreContent.php?type=exp&id='+id,function(){
+            $('.modal-body').load('../../php/content/getReadMoreContent.php?type=exp&id='+id,function(){
                 $('#readMoreModal').modal({show:true});
             });
         });
@@ -140,7 +140,7 @@ $(document).on('click','#educationId', function () {
     $("#educationSectionDiv").load("../../php/content/fetchEducation.php", function() {
         $('.cd-timeline__read-more').on('click',function(){
             var id=this.id;
-            $('.modal-body').load('../../php/getReadMoreContent.php?type=edu&id='+id,function(){
+            $('.modal-body').load('../../php/content/getReadMoreContent.php?type=edu&id='+id,function(){
                 $('#readMoreModal').modal({show:true});
             });
         });
