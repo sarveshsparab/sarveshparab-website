@@ -137,7 +137,7 @@ $(document).on('click','#experienceId', function () {
 $(document).on('click','#educationId', function () {
     $("#educationSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
     $(".activeSection").toggleClass("activeSection inactiveSection");
-    $("#educationSectionDiv").load("../../html/educationSection.html", function() {
+    $("#educationSectionDiv").load("../../php/content/fetchEducation.php", function() {
         $('.cd-timeline__read-more').on('click',function(){
             var id=this.id;
             $('.modal-body').load('../../php/getReadMoreContent.php?type=edu&id='+id,function(){
