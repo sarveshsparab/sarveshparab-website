@@ -18,9 +18,7 @@ if ($result->num_rows > 0) {
         $content .= '</h2>';
         if($row["short_desc"]!=null){
             $content .= '<p>';
-            foreach(handleDesc($row["short_desc"]) as $descLine){
-                $content .= $descLine.'<br>';
-            }
+            $content .= $row["short_desc"];
             $content .= '</p>';
         }
         if($row["long_desc"]!=null){
