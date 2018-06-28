@@ -350,6 +350,7 @@
         width: 100%;
         top: unset;
         left: unset;
+        display: none;
         right: unset;
         height: 2px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #2da5da , rgba(0, 0, 0, 0));
@@ -382,6 +383,7 @@
     }
     .homeVR{
         width: 100%;
+        display: none;
         top: unset;
         left: unset;
         right: unset;
