@@ -7,6 +7,7 @@ $sql = "SELECT * from experience exp ORDER BY exp.display_order DESC";
 $result = $conn->query($sql);
 
 $content = '';
+$content .= '<div class="sectionHeader"><span>Experience</span></div>';
 $content .= '<section class="cd-timeline js-cd-timeline"><div class="cd-timeline__container">';
 
 if ($result->num_rows > 0) {

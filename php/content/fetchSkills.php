@@ -9,6 +9,7 @@ $sql = "SELECT * from skills sk WHERE sk.type='".$type."' ORDER BY sk.display_or
 $result = $conn->query($sql);
 
 $content = '';
+$content .= '<div class="sectionHeader"><span>'.ucfirst($type).'  Skills</span></div>';
 $content .= '<div class="allskills">';
 
 if ($result->num_rows > 0) {
