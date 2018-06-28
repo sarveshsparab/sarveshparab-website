@@ -5,7 +5,7 @@
 .skillbar {
     position:relative;
     display:block;
-    margin-bottom:35px;
+    margin-bottom:42px;
     width:100%;
     background:#eee;
     height:5px;
@@ -26,19 +26,19 @@
 
 .skillbar-title {
     position:absolute;
-    top: -14px;
+    top: -8px;
     left: -110px;
     width:110px;
     font-size:15px;
     font-family: 'Quicksand', sans-serif;
     color: #000000;
+    text-align: right;
 }
 
 .skillbar-title span {
     display:block;
     padding:0 20px;
     height:35px;
-    line-height:35px;
 }
 
 .skillbar-bar {
