@@ -15,12 +15,14 @@ window.onload = function() {
                         shuffleTags: true,
                         reverse: true,
                         depth: 0.8,
-                        maxSpeed: 0.05,
+                        initial: [-0.310, 0.200],
+                        maxSpeed: 0.015,
                         textFont: '"Quicksand", sans-serif',
                         textColour: null,
                         weight: true,
                         zoomMax: 4.0,
                         zoomMin: 1.0,
+                        centreImage: '../../resources/faviconAndLogo/logo_transparent_small.png',
                     });
                 } catch(e) {
                     document.getElementById('mySkillsCloud').style.display = 'none';
