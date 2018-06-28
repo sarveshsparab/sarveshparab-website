@@ -133,9 +133,6 @@
 .cd-timeline__container::before {
     background: #f5b093;
 }
-.cd-timeline__content::before {
-    border-right: 7px solid #fd7337;
-}
 .cd-timeline__sym {
     background-color: #fd7337;
 }
@@ -164,6 +161,11 @@
     }
     .cd-timeline__block:nth-child(even) .cd-timeline__content::before {
         border-right-color: #fd7337;
+    }
+}
+@media screen and (max-width: 767px) {
+    .cd-timeline__content::before {
+        border-right: 7px solid #fd7337;
     }
 }
 /* ************************************************************************** */
