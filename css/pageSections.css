@@ -51,6 +51,33 @@
     url('../fonts/quicksand-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
     url('../fonts/quicksand-v7-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
 }
+
+/* poiret-one-regular - latin */
+@font-face {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poiret-one-v5-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Poiret One'), local('PoiretOne-Regular'),
+    url('../fonts/poiret-one-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/poiret-one-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/poiret-one-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/poiret-one-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/poiret-one-v5-latin-regular.svg#PoiretOne') format('svg'); /* Legacy iOS */
+}
+/* bungee-regular - latin */
+@font-face {
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bungee-v3-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Bungee'), local('Bungee-Regular'),
+    url('../fonts/bungee-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/bungee-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/bungee-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/bungee-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/bungee-v3-latin-regular.svg#Bungee') format('svg'); /* Legacy iOS */
+}
 /* ************************************************** */
 
 /* Generic */
@@ -60,6 +87,37 @@
 
 .activeSection{
     display: block;
+}
+.sectionHeader {
+    line-height: 0.5;
+    text-align: center;
+    margin-top : 25px;
+    margin-bottom: 25px;
+    font-family: 'Bungee', cursive;
+}
+.sectionHeader span {
+    display: inline-block;
+    position: relative;
+    font-weight : 900;
+    font-size : 60px;
+}
+.sectionHeader span:before,
+.sectionHeader span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #2da5da;
+    border-top: 1px solid #2da5da;
+    top: 15px;
+    width: 250%;
+}
+.sectionHeader span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.sectionHeader span:after {
+    left: 100%;
+    margin-left: 15px;
 }
 /* ************************************************** */
 
