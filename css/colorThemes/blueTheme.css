@@ -133,6 +133,9 @@
 .cd-timeline__container::before {
     background: #94b7f3;
 }
+.cd-timeline__content::before {
+    border-right: 7px solid #2a70e8;
+}
 .cd-timeline__sym {
     background-color: #2a70e8;
 }
@@ -205,5 +208,13 @@
 /* Skills Bars */
 .skillbar-bar {
     background: #2a70e8;
+}
+/* ************************************************************************** */
+
+/* Header */
+.sectionHeader span:before,
+.sectionHeader span:after {
+    border-bottom: 1px solid #2a70e8;
+    border-top: 1px solid #2a70e8;
 }
 /* ************************************************************************** */

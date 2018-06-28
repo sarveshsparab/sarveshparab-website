@@ -18,7 +18,7 @@
 /* Menu-Form Colors */
 .sp-menu form .input:hover input,
 .sp-menu form .textarea:hover textarea {
-    border-color: #8dc9e5;
+    border-color: #91e393;
 }
 .sp-menu form .button {
     background-color: #43bf43;
@@ -134,6 +134,9 @@
 .cd-timeline__container::before {
     background: #91e393;
 }
+.cd-timeline__content::before {
+    border-right: 7px solid #43bf43;
+}
 .cd-timeline__sym {
     background-color: #43bf43;
 }
@@ -206,5 +209,13 @@
 /* Skills Bars */
 .skillbar-bar {
     background: #43bf43;
+}
+/* ************************************************************************** */
+
+/* Header */
+.sectionHeader span:before,
+.sectionHeader span:after {
+    border-bottom: 1px solid #43bf43;
+    border-top: 1px solid #43bf43;
 }
 /* ************************************************************************** */
