@@ -164,6 +164,11 @@
         border-right-color: #d2477e;
     }
 }
+@media screen and (max-width: 1000px) {
+    .cd-timeline__content::before {
+        border-right: 7px solid #d2477e;
+    }
+}
 @media screen and (max-width: 767px) {
     .cd-timeline__content::before {
         border-right: 7px solid #d2477e;
