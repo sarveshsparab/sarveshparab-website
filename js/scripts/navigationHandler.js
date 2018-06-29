@@ -10,12 +10,27 @@ $(document).on('click','#resumeId', function () {
 $(document).on('click','#projectsId', function () {
     $("#projectsSectionDiv").html('<div id="jqueryLoaderId" class="jqueryLoader"><i class="fa fa-spin fa-spinner"></i></div>');
     $(".activeSection").toggleClass("activeSection inactiveSection");
-    $("#projectsSectionDiv").load("../../html/projectsSection.html", function() {
+    $("#projectsSectionDiv").load("../../php/content/fetchProject.php", function() {
         gridLayoutResizer();
         $('.tileReadMore').on('click',function(){
             var id=this.id;
-            $('.modal-body').load('../../php/content/fetchMoreContent.php?type=prj&id='+id,function(){
-                $('#readMoreModalPrj').modal({show:true});
+            $.ajax({
+                url: '../../php/content/fetchMoreContent.php?type=prj&id=' + id,
+                success: function (result) {
+                    var parsedResult = JSON.parse(result);
+                    $(".modal-body").html('<div id="jqueryLoaderId" class="jqueryLoader" style="line-height: unset"><i class="fa fa-spin fa-spinner"></i></div>');
+                    if (parsedResult.status == 'ERROR') {
+                        console.error("Error : No data returned from the db | Result : " + result);
+                    } else {
+                        $(".modal-title").html(parsedResult.title);
+                        var bodyContents = parsedResult.body;
+                        $(".modal-body").html(genModalBody("prj", bodyContents));
+                        $('#readMoreModalEdu').modal({show: true});
+                    }
+                },
+                error: function () {
+                    console.error("Error : In AJAX call for fetching read more data | id : " + id);
+                }
             });
         });
     });
@@ -276,7 +291,6 @@ function genModalBody(type, bodyContents) {
         return "ERROR";
     }
 }
-
 function interpretMetaType(type, data){
     if(type=="Skills"){
         return '<div class="modal-body sub_body_item"><u>' + type + '</u><ul>' + processSkillsMetaData(data) + '</ul></div>';
@@ -284,7 +298,6 @@ function interpretMetaType(type, data){
         return '<div class="modal-body sub_body_item"><u>' + type + '</u><ul>' + processMetaData(data) + '</ul></div>';
     }
 }
-
 function processSkillsMetaData(skillData){
     var retVal = '';
     Object.keys(skillData).forEach(function(skillType) {
@@ -296,7 +309,6 @@ function processSkillsMetaData(skillData){
     });
     return retVal;
 }
-
 function processMetaData(metaData) {
     var retVal = '';
     var metaData_array = metaData.split('|');

@@ -3,20 +3,18 @@
 include("../db/connectGoDaddyDB.php");
 include("../util/utility.php");
 
-$sql = "SELECT * from experience exp ORDER BY exp.display_order DESC";
+$sql = "SELECT * from projects prj ORDER BY prj.display_order DESC";
 $result = $conn->query($sql);
 
 $content = '';
-$content .= '<div class="sectionHeader"><span>Experience</span></div>';
-$content .= '<section class="cd-timeline js-cd-timeline"><div class="cd-timeline__container">';
+$content .= '<div class="sectionHeader"><span>Projects</span></div>';
+$content .= '<div class="grid">';
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        $content .= '<div class="cd-timeline__block js-cd-block"><div class="cd-timeline__sym js-cd-img"><span>';
-        $content .= $row["symbol"];
-        $content .= '</span></div><div class="cd-timeline__content js-cd-content"><h2>';
-        $content .= $row["designation"];
-        $content .= '</h2>';
+        $content .= '<div class="item"><div class="content"><div class="title"><h3>';
+        $content .= $row["title"];
+        $content .= '</h3></div><div class="desc">';
         if($row["short_desc"]!=null){
             $content .= '<p>';
             foreach(handleDesc($row["short_desc"]) as $descLine){
@@ -24,16 +22,15 @@ if ($result->num_rows > 0) {
             }
             $content .= '</p>';
         }
-        if($row["long_desc"]!=null){
-            $content .= '<a id="edu_'.$row["id"].'" class="cd-timeline__read-more">Read more</a>';
+        $content .= '<hr><div class="tileInfo">';
+        $content .= '<a href="'.$row["code_link"].'" target="_blank"><i class="fab fa-github"></i></a>';
+        $content .= '<span>'.$row["time_frame"].'</span></div>';
+        if($row["meta"]!=0){
+            $content .= '<div id="prj_'.$row["id"].'" class="tileReadMore"><a>Read More</a></div>';
         }
-        $content .= '<span class="cd-timeline__name">';
-        $content .= $row["organisation"];
-        $content .= '</span><br><span class="cd-timeline__date">';
-        $content .= $row["time_frame"];
-        $content .= '</span></div></div>';
+        $content .= '</div></div></div>';
     }
-    $content .= '</div></section>';
+    $content .= '</div>';
 } else {
     $content = 'ERROR';
 }
