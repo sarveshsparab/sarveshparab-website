@@ -281,7 +281,10 @@ body {
     height: 350px;
     overflow-y: auto;
 }
-
+.modal-body .sub_body_item{
+    height: unset;
+    padding: unset;
+}
 .modal-footer {
     padding: 6px;
     text-align: right;

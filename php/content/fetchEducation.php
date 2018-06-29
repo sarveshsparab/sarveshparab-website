@@ -19,10 +19,12 @@ if ($result->num_rows > 0) {
         $content .= '</h2>';
         if($row["short_desc"]!=null){
             $content .= '<p>';
-            $content .= $row["short_desc"];
+            foreach(handleDesc($row["short_desc"]) as $descLine){
+                $content .= $descLine.'<br>';
+            }
             $content .= '</p>';
         }
-        if($row["long_desc"]!=null){
+        if($row["meta"]!=0){
             $content .= '<a id="edu_'.$row["id"].'" class="cd-timeline__read-more">Read more</a>';
         }
         $content .= '<span class="cd-timeline__name">';

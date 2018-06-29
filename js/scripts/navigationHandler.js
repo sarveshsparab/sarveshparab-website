@@ -14,8 +14,8 @@ $(document).on('click','#projectsId', function () {
         gridLayoutResizer();
         $('.tileReadMore').on('click',function(){
             var id=this.id;
-            $('.modal-body').load('../../php/content/getReadMoreContent.php?type=prj&id='+id,function(){
-                $('#readMoreModal').modal({show:true});
+            $('.modal-body').load('../../php/content/fetchMoreContent.php?type=prj&id='+id,function(){
+                $('#readMoreModalPrj').modal({show:true});
             });
         });
     });
@@ -42,16 +42,17 @@ $(document).on('click','#experienceId', function () {
         $('.cd-timeline__read-more').on('click',function(){
             var id=this.id;
             $.ajax({
-                url: '../../php/content/getReadMoreContent.php?type=exp&id=' + id,
+                url: '../../php/content/fetchMoreContent.php?type=exp&id=' + id,
                 success: function (result) {
                     var parsedResult = JSON.parse(result);
                     $(".modal-body").html('<div id="jqueryLoaderId" class="jqueryLoader" style="line-height: unset"><i class="fa fa-spin fa-spinner"></i></div>');
                     if (parsedResult.status == 'ERROR') {
                         console.error("Error : No data returned from the db | Result : " + result);
                     } else {
-                        $(".modal-title").html(parsedResult.designation);
-                        $(".modal-body").html(parsedResult.long_desc);
-                        $('#readMoreModal').modal({show: true});
+                        $(".modal-title").html(parsedResult.title);
+                        var bodyContents = parsedResult.body;
+                        $(".modal-body").html(genModalBody("exp", bodyContents));
+                        $('#readMoreModalEdu').modal({show: true});
                     }
                 },
                 error: function () {
@@ -71,16 +72,18 @@ $(document).on('click','#educationId', function () {
         $('.cd-timeline__read-more').on('click', function () {
             var id = this.id;
             $.ajax({
-                url: '../../php/content/getReadMoreContent.php?type=edu&id=' + id,
+                url: '../../php/content/fetchMoreContent.php?type=edu&id=' + id,
                 success: function (result) {
                     var parsedResult = JSON.parse(result);
-                    $(".modal-body").html('<div id="jqueryLoaderId" class="jqueryLoader" style="line-height: unset"><i class="fa fa-spin fa-spinner"></i></div>');
-                    if (parsedResult.status == 'ERROR') {
+                    console.log(result);
+                    $(".modal-body").html('<div id="jqueryLoaderId" class="jqueryLoader" style="line-height: 48vh"><i class="fa fa-spin fa-spinner"></i></div>');
+                    if (parsedResult.status == "ERROR") {
                         console.error("Error : No data returned from the db | Result : " + result);
                     } else {
-                        $(".modal-title").html(parsedResult.degree);
-                        $(".modal-body").html(parsedResult.long_desc);
-                        $('#readMoreModal').modal({show: true});
+                        $(".modal-title").html(parsedResult.title);
+                        var bodyContents = parsedResult.body;
+                        $(".modal-body").html(genModalBody("edu", bodyContents));
+                        $('#readMoreModalEdu').modal({show: true});
                     }
                 },
                 error: function () {
@@ -254,5 +257,52 @@ function gridLayoutResizer(){
     for (x = 0; x < allItems.length; x++) {
         imagesLoaded(allItems[x], resizeInstance);
     }
+}
+
+function genModalBody(type, bodyContents) {
+    if(type=="edu" || type=="exp" || type=="prj"){
+        var bodyVal = '';
+        Object.keys(bodyContents).forEach(function(key) {
+            var interpretedType = interpretMetaType(key, bodyContents[key]);
+            if(interpretedType=="ERROR"){
+                return 'ERROR';
+            }else{
+                bodyVal += interpretedType;
+            }
+        });
+        return bodyVal;
+    } else {
+        console.error("ERROR : In processing request for type : "+type+" | Having data : "+bodyContents);
+        return "ERROR";
+    }
+}
+
+function interpretMetaType(type, data){
+    if(type=="Skills"){
+        return '<div class="modal-body sub_body_item"><u>' + type + '</u><ul>' + processSkillsMetaData(data) + '</ul></div>';
+    } else {
+        return '<div class="modal-body sub_body_item"><u>' + type + '</u><ul>' + processMetaData(data) + '</ul></div>';
+    }
+}
+
+function processSkillsMetaData(skillData){
+    var retVal = '';
+    Object.keys(skillData).forEach(function(skillType) {
+        var skillNames = skillData[skillType].replace(/\|/g, ", ");
+        retVal += '<li><div class="default_skillType">';
+        retVal += skillType.charAt(0).toUpperCase() + skillType.slice(1)+' : ';
+        retVal += skillNames;
+        retVal += '</div></li>';
+    });
+    return retVal;
+}
+
+function processMetaData(metaData) {
+    var retVal = '';
+    var metaData_array = metaData.split('|');
+    for(var i = 0; i < metaData_array.length; i++) {
+        retVal += '<li>'+metaData_array[i]+'</li>';
+    }
+    return retVal;
 }
 /* *********************************************************** */

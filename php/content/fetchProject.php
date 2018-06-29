@@ -24,7 +24,7 @@ if ($result->num_rows > 0) {
             }
             $content .= '</p>';
         }
-        if($row["meta"]!=0){
+        if($row["long_desc"]!=null){
             $content .= '<a id="edu_'.$row["id"].'" class="cd-timeline__read-more">Read more</a>';
         }
         $content .= '<span class="cd-timeline__name">';
