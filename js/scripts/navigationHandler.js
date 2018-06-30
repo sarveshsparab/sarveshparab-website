@@ -294,9 +294,19 @@ function genModalBody(type, bodyContents) {
 function interpretMetaType(type, data){
     if(type=="Skills"){
         return '<div class="modal-body sub_body_item"><u>' + type + '</u><ul>' + processSkillsMetaData(data) + '</ul></div>';
+    } else if(type=="Links") {
+        return '<div class="modal-body sub_body_item"><u>' + type + '</u><ul>' + processLinksMetaData(data) + '</ul></div>';
     } else {
         return '<div class="modal-body sub_body_item"><u>' + type + '</u><ul>' + processMetaData(data) + '</ul></div>';
     }
+}
+function processLinksMetaData(linksData){
+    var retVal = '';
+    var linksData_array = linksData.split('|');
+    for(var i = 0; i < linksData_array.length; i++) {
+        retVal += '<li><a href="'+linksData_array[i]+'" target="_blank">'+linksData_array[i]+'</a></li>';
+    }
+    return retVal;
 }
 function processSkillsMetaData(skillData){
     var retVal = '';
