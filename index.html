@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xml:lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8">
     <title>Sarvesh Parab</title>
-    <meta name='description' content='Sarvesh Parab - Profile | Accomplishments | Blog'/>
-    <meta name='keywords' content='coming soon, html, html5, css3, css, under construction'/>
 
-    <link rel="shortcut icon" type="image/png" href="resources/faviconAndLogo/logo_transparent_small.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Sarvesh Parab | Resume | Projects | Education | Experience | Skills | Blog | Contact Me">
 
-    <link rel="stylesheet" href="css/workInProgress.css" type="text/css" media="screen, projection"/>
-    <link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/AIOCSS.min.css">
+    <link id="themeCSSID" rel="stylesheet" href="css/colorThemes/defaultTheme.min.css">
+
+    <script src="js/jquery/jquery-1.9.1.min.js"></script>
+    <script async src="js/jquery/allJQueryAsyncScripts.js"></script>
+
+    <script async src="js/bootstrap/bootstrap.min.js"></script>
+    <script async src="js/images/imagesloaded.pkgd.min.js"></script>
+    <script src="js/tagcanvas/tagcanvas.min.js"></script>
+
+    <script src="js/scripts/myScripts.js"></script>
+    <script async src="js/scripts/myAsyncScripts.js"></script>
+
+    <!-- Google AdSense code -->
+    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6569529235612114",
+            enable_page_level_ads: true
+        });
+    </script> -->
+    <!-- Google AdSense code -->
 </head>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -22,13 +42,95 @@
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
-<body>
-<div>
-    <div class="noticeCenter">
-        <span class="wipBlue wipLargeFont">Sarvesh</span><span class="wipYellow wipLargeFont">|</span><span
-            class="wipRed wipLargeFont">Parab</span>
-        <h2>Future home of something cool!!</h2>
+<body id="spBodyId" style="background-color:#fff;">
+<!-- Pre-loading Fonts -->
+<div class="font_preload" style="opacity: 0">
+    <span style="font-family: 'Quicksand', sans-serif"></span>
+    <span style="font-family: 'Poor Story', cursive"></span>
+    <span style="font-family: 'Abel', sans-serif"></span>
+    <span style="font-family: 'Bilbo Swash Caps', cursive"></span>
+    <span style="font-family: 'Russo One', sans-serif"></span>
+    <span style="font-family: 'Jura', sans-serif"></span>
+</div>
+<header id="spHeaderId"></header>
+<main id="spMainID">
+    <div id="mainContentDivId" class="mainContentWithoutADs">
+        <div id="homeSectionDiv" class="homeSection activeSection">
+            <div id="topQuoteHomeDiv" class="topQuoteHome"></div>
+            <div id="leftOrTopHomeDiv" class="leftOrTopHome">
+                <div id="mySkillsCloud" class="cloudHomeDiv">
+                    <canvas id="mySkillsCloudCanvas" class="mySkillsCloudCanvas"></canvas>
+                </div>
+            </div>
+            <div class="homeVR">&nbsp;</div>
+            <div id="rightOrBottomHomeDiv" class="rightOrBottomHome">
+                <img src="resources/homeSection/myProfileTinySmallTiny.png" alt="Profile Picture">
+                <h1>SARVESH PARAB</h1>
+                <h2>MS in Computer Science</h2>
+                <h2>Los Angeles, California</h2>
+                <a href="resources/resume/SarveshParab_Resume.pdf" class="resumeDownloadBtn" target="_blank">
+                    <span class="resumeDownloadBtnContent">Download CV</span>
+                    <span class="resumeDownloadBtnIcon"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+                </a>
+            </div>
+        </div>
+        <div id="experienceSectionDiv" class="experienceSection inactiveSection"></div>
+        <div id="educationSectionDiv" class="educationSection inactiveSection"></div>
+        <div id="skillsSectionDiv" class="skillsSection inactiveSection"></div>
+        <div id="projectsSectionDiv" class="projectsSection inactiveSection"></div>
+        <div id="blogSectionDiv" class="blogSection inactiveSection"></div>
+    </div>
+    <div id="adsContentDivId" class="googleAdsDisabled"></div>
+</main>
+<footer id="spFooterId"></footer>
+
+<!-- Read More Modals for Education -->
+<div class="modal fade" id="readMoreModalEdu" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
 </div>
+<!-- Read More Modals -->
+
+<!-- Read More Modals for Experience -->
+<div class="modal fade" id="readMoreModalExp" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Read More Modals -->
+
+<!-- Read More Modals for Projects -->
+<div class="modal fade" id="readMoreModalPrj" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Read More Modals -->
+
 </body>
 </html>
