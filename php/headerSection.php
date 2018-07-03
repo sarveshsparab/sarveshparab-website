@@ -10,7 +10,7 @@ $_SESSION['captcha_id'] = $str;
 <ul class="sp-menu sp-menu-fixed sp-menu-response-to-icons sp-menu-anim-scale">
     <!-- Home -->
     <li>
-        <a id="homeId" href="#"><i class="fa fa-home"></i>Home</a>
+        <a id="homeId" href="index.html"><i class="fa fa-home"></i>Home</a>
     </li>
     <!--/ Home -->
 

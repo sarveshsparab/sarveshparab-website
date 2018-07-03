@@ -22,12 +22,12 @@ if ($type == 'edu') {
 
 $retData = array();
 
-$eduSql = "SELECT * FROM ".$table." t WHERE t.id=" . extractID($id);
-$eduResult = $conn->query($eduSql);
+$tableSql = "SELECT * FROM ".$table." t WHERE t.id=" . extractID($id);
+$tableResult = $conn->query($tableSql);
 
-if ($eduResult->num_rows > 0) {
+if ($tableResult->num_rows > 0) {
     $retData['status'] = 'SUCCESS';
-    while($row = $eduResult->fetch_assoc()) {
+    while($row = $tableResult->fetch_assoc()) {
         $retData['title'] = $row[$titleCol];
     }
 
@@ -50,6 +50,7 @@ if ($eduResult->num_rows > 0) {
     $skillResult = $conn->query($skillSql);
 
     if ($skillResult->num_rows > 0) {
+        $retData['status'] = 'SUCCESS';
         while($row = $skillResult->fetch_assoc()) {
             if($retData['body']['Skills'][$row['type']]==''){
                 $retData['body']['Skills'][$row['type']] = $row['name'];

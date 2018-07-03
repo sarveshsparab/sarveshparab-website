@@ -930,6 +930,7 @@
       <Position>5</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="238" parent="223" name="degree">
@@ -1018,9 +1019,11 @@ edu_id</ColNames>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="225" name="long_desc">
+    <column id="253" parent="225" name="meta">
       <Position>5</Position>
-      <DataType>varchar(50000)|0s</DataType>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="254" parent="225" name="designation">
@@ -1148,32 +1151,33 @@ exp_id</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="228" name="short_desc">
+    <column id="275" parent="228" name="title_photo">
       <Position>3</Position>
-      <DataType>varchar(200)|0s</DataType>
+      <DataType>varchar(5000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="276" parent="228" name="short_desc">
+      <Position>4</Position>
+      <DataType>mediumtext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="228" name="long_desc">
-      <Position>4</Position>
-      <DataType>varchar(50000)|0s</DataType>
+    <column id="277" parent="228" name="meta">
+      <Position>5</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="228" name="code_link">
-      <Position>5</Position>
+    <column id="278" parent="228" name="code_link">
+      <Position>6</Position>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="228" name="time_frame">
-      <Position>6</Position>
+    <column id="279" parent="228" name="time_frame">
+      <Position>7</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="279" parent="228" name="metadata">
-      <Position>7</Position>
-      <DataType>tinyint(1)|0s</DataType>
-      <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="280" parent="228" name="display_order">

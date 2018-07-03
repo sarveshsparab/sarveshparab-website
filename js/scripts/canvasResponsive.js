@@ -16,7 +16,7 @@ window.onload = function() {
                         reverse: true,
                         depth: 0.8,
                         initial: [-0.310, 0.200],
-                        maxSpeed: 0.015,
+                        maxSpeed: 0.02,
                         textFont: '"Quicksand", sans-serif',
                         textColour: null,
                         weight: true,

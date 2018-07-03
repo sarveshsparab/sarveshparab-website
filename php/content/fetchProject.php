@@ -14,7 +14,11 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $content .= '<div class="item"><div class="content"><div class="title"><h3>';
         $content .= $row["title"];
-        $content .= '</h3></div><div class="desc">';
+        $content .= '</h3></div>';
+        if($row["title_photo"]!=null){
+            $content .= '<img class="photothumb" src="'.$row["title_photo"].'">';
+        }
+        $content .= '<div class="desc">';
         if($row["short_desc"]!=null){
             $content .= '<p>';
             foreach(handleDesc($row["short_desc"]) as $descLine){
@@ -23,7 +27,9 @@ if ($result->num_rows > 0) {
             $content .= '</p>';
         }
         $content .= '<hr><div class="tileInfo">';
-        $content .= '<a href="'.$row["code_link"].'" target="_blank"><i class="fab fa-github"></i></a>';
+        if($row["code_link"]!=null){
+            $content .= '<a href="'.$row["code_link"].'" target="_blank"><i class="fab fa-github"></i></a>';
+        }
         $content .= '<span>'.$row["time_frame"].'</span></div>';
         if($row["meta"]!=0){
             $content .= '<div id="prj_'.$row["id"].'" class="tileReadMore"><a>Read More</a></div>';
