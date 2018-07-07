@@ -56,7 +56,7 @@
 .sp-menu {
     position: relative;
     z-index: 999;
-    background: #f6f6f6;
+    background: #c1c1c1;
     box-shadow: 0 0 20px rgba(0,0,0,.3);
     font-size: 0;
     line-height: 0;
@@ -84,7 +84,7 @@
     display: block;
     padding: 0 20px;
     text-decoration: none;
-    color: #666;
+    color: #383737;
     transition: background 0.4s, color 0.4s;
     -o-transition: background 0.4s, color 0.4s;
     -ms-transition: background 0.4s, color 0.4s;

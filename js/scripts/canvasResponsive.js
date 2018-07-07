@@ -22,7 +22,7 @@ window.onload = function() {
                         weight: true,
                         zoomMax: 4.0,
                         zoomMin: 1.0,
-                        centreImage: '../../resources/faviconAndLogo/logo_transparent_small.png',
+                        centreImage: '../../resources/homeSection/aboutme_tiny_resized.png',
                     });
                 } catch(e) {
                     document.getElementById('mySkillsCloud').style.display = 'none';
