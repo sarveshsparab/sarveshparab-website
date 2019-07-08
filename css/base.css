@@ -280,6 +280,7 @@ body {
     font-family: 'Abel', sans-serif;
     height: 350px;
     overflow-y: auto;
+    overflow-wrap: break-word;
 }
 .modal-body .sub_body_item{
     height: unset;
