@@ -1,10 +1,10 @@
 {
-  "name":"Spotify",
-  "xpos":-5,
-  "ypos":3,
-  "logo_loc":"Logo/spotify_logo",
-  "category":"entertainment",
-  "source":"https://www.spotify.com/",
+  "name":"Yelp",
+  "xpos":4,
+  "ypos":2,
+  "logo_loc":"Logo/yelp_logo",
+  "category":"social",
+  "source":"https://www.yelp.com/",
   "browser_permissions":[
     {
       "name":"Location",
@@ -33,27 +33,33 @@
   ],
   "alternatives":[
     {
-      "name":"Netflix",
-      "logo_loc":"Logo/netflix_logo",
+      "name":"Facebook",
+      "logo_loc":"Logo/facebook_logo",
       "threat_score":70
     },
     {
-      "name":"Youtube",
-      "logo_loc":"Logo/youtube_logo",
+      "name":"Zomato",
+      "logo_loc":"Logo/zomato_logo",
       "threat_score":76
     },
     {
-      "name":"Amazon",
-      "logo_loc":"Logo/amazonVideo_logo",
+      "name":"Uber",
+      "logo_loc":"Logo/ubereats_logo",
       "threat_score":39
     }
   ],
-  "threat_score":29,
+  "threat_score":55,
   "trackers":[
     {
       "name":"tracker_c",
       "companies":[
-        "​"
+    "Google",
+    "Netflix",
+    "Deserve",
+    "Youtube",
+    "Airbnb",
+    "Trivago",
+    "Facebook"
       ]
     }
   ],
@@ -72,14 +78,14 @@
     }
   ],
   "cookie_statistics": {
-    "user_cookies": 60,
-    "session_cookies": 50,
-    "thirdparty_cookies": 20
-  },
+	"user_cookies": 40,
+	"session_cookies": 50,
+	"thirdparty_cookies": 60
+  },  
   "past_scandals":[
     {
-      "headline":"Spotify resets some account passwords citing ‘suspicious activity’",
-      "source":"https://techcrunch.com/2019/05/22/spotify-password-resets/",
+      "headline":"Cloudflare security breach exposes data from Yelp",
+      "source":"https://www.yelp.com/topic/saint-louis-cloudflare-security-breach-exposes-data-from-yelp-uber-fitbit-okcupid-among-3-400-websites-password-changes-recommended",
       "source_title":"DataBreaches",
       "author":"John Doe"
     }

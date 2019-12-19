@@ -1,7 +1,7 @@
 {
   "name":"Netflix",
-  "xpos":3,
-  "ypos":4,
+  "xpos":-3,
+  "ypos":3,
   "logo_loc":"Logo/netflix_logo",
   "category":"entertainment",
   "source":"https://www.netflix.com/",
@@ -9,10 +9,6 @@
     {
       "name":"Location",
       "icon_loc":"Icons/location_color"
-    },
-    {
-      "name":"Camera",
-      "icon_loc":"Icons/camera_color"
     },
     {
       "name":"Microphone",
@@ -37,66 +33,62 @@
   ],
   "alternatives":[
     {
-      "name":"Hulu",
-      "logo_loc":"Logo/hulu_logo",
-      "threat_score":47
-    },
-    {
-      "name":"youtube",
+      "name":"Youtube",
       "logo_loc":"Logo/youtube_logo",
-      "threat_score":77
+      "threat_score":70
     },
     {
-      "name":"HBO",
-      "logo_loc":"Logo/hbo_logo",
-      "threat_score":27
+      "name":"Amazon",
+      "logo_loc":"Logo/amazonVideo_logo",
+      "threat_score":76
+    },
+    {
+      "name":"Spotify",
+      "logo_loc":"Logo/spotify_logo",
+      "threat_score":39
     }
   ],
-  "threat_score":53,
+  "threat_score":55,
   "trackers":[
-    {
-      "name":"tracker_d",
-      "companies":[
-        "Hulu",
-        "youtube",
-        "Pandora"
-      ]
-    },
     {
       "name":"tracker_c",
       "companies":[
-        "Hulu",
-        "youtube",
-        "Spotify"
+    "Google",
+    "Yelp",
+    "Deserve",
+    "Youtube",
+    "Airbnb",
+    "Trivago",
+    "Facebook",
+    "GoogleFlights"
       ]
     }
   ],
   "cookie_data":[
     {
-      "key":"most_active_hour",
-      "value":"22:00"
+      "key":"last_trip_booked",
+      "value":"France"
     },
     {
-      "key":"most_freq_genre",
-      "value":"crime"
+      "key":"last_trip_dates",
+      "value":"06:13:2019 - 06:21:2019"
     },
     {
-      "key":"view_hours_per_day",
-      "value":"4:36"
+      "key":"average_trip_duration",
+      "value":"7 days"
     }
   ],
+  "cookie_statistics": {
+	"user_cookies": 95,
+	"session_cookies": 80,
+	"thirdparty_cookies": 60
+  },  
   "past_scandals":[
     {
-      "headline":"Hundreds of stolen passwords for Netflix discovered for sale on ‘dark web’",
-      "source":"https://www.aol.com/article/finance/2018/08/13/hundreds-of-stolen-passwords-for-netflix-hbo-hulu-and-more-discovered-for-sale-on-dark-web/23501424/",
-      "source_title":"Aol",
-      "author":"Todd Spangler"
-    },
-    {
-      "headline":"When your Netflix account gets hacked",
-      "source":"https://www.mercurynews.com/2019/02/07/netflix-account-story/",
-      "source_title":"Mercury News",
-      "author":"REX CRUM"
+      "headline":"Netflix Has Been Hacked!",
+      "source":"https://www.her.ie/business/netflix-has-been-hacked-heres-how-to-check-if-your-account-is-affected-268027",
+      "source_title":"DataBreaches",
+      "author":"John Doe"
     }
   ]
 }

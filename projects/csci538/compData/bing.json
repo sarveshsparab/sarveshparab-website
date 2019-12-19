@@ -1,0 +1,67 @@
+{
+  "name":"Bing", 
+  "xpos":1,
+  "ypos":7,
+  "logo_loc":"Logo/bing_logo",
+  "category":"searchengine",  
+  "source":"https://www.bing.com/",
+  "browser_permissions":[
+    {
+      "name":"Location",
+      "icon_loc":"Icons/location_color"
+    },
+    {
+      "name":"Notifications",
+      "icon_loc":"Icons/notification_color"
+    },
+    {
+      "name":"JavaScript",
+      "icon_loc":"Icons/javascript_color"
+    },
+    {
+      "name":"Payment",
+      "icon_loc":"Icons/payment_color"
+    }
+  ],
+  "alternatives":[   
+    {
+      "name":"Google",
+      "logo_loc":"Logo/google_logo",
+      "threat_score":70
+    },
+    {
+      "name":"Bing",
+      "logo_loc":"Logo/bing_logo",
+      "threat_score":76
+    },
+    {
+      "name":"Duckduckgo",
+      "logo_loc":"Logo/duckduckgo_logo",
+      "threat_score":39
+    }
+  ],
+  "threat_score":40,
+  "trackers":[
+    {
+      "name":"tracker_c",
+      "companies":[
+        "LinkedIn",
+        "Yelp",
+        "Yahoo"
+      ]
+    }
+  ],
+  "cookie_statistics": {
+  "user_cookies": 50,
+  "session_cookies": 75,
+  "thirdparty_cookies": 60
+  },  
+  "past_scandals":[
+    {
+      "headline":"CloudFare bug affects Bing and google",
+      "source":"https://www.pcworld.com/article/3243108/biggest-hacks-security-breaches-2017.html",
+      "source_title":"DataBreaches",
+      "author":"John Doe"
+    }
+  ]
+}

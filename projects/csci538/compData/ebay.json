@@ -1,10 +1,10 @@
 {
-  "name":"Spotify",
-  "xpos":-5,
-  "ypos":3,
-  "logo_loc":"Logo/spotify_logo",
-  "category":"entertainment",
-  "source":"https://www.spotify.com/",
+  "name":"Ebay",
+  "xpos":0,
+  "ypos":-2,
+  "logo_loc":"Logo/ebay_logo",
+  "category":"shopping",
+  "source":"https://www.ebay.com/",
   "browser_permissions":[
     {
       "name":"Location",
@@ -33,27 +33,29 @@
   ],
   "alternatives":[
     {
-      "name":"Netflix",
-      "logo_loc":"Logo/netflix_logo",
+      "name":"Flipkart",
+      "logo_loc":"Logo/flipkart_logo",
       "threat_score":70
     },
     {
-      "name":"Youtube",
-      "logo_loc":"Logo/youtube_logo",
+      "name":"Wish",
+      "logo_loc":"Logo/wish_logo",
       "threat_score":76
     },
     {
       "name":"Amazon",
-      "logo_loc":"Logo/amazonVideo_logo",
+      "logo_loc":"Logo/amazon_logo",
       "threat_score":39
     }
   ],
-  "threat_score":29,
+  "threat_score":55,
   "trackers":[
     {
       "name":"tracker_c",
       "companies":[
-        "​"
+          "Google",
+          "Instagram",
+          "Yahoo"
       ]
     }
   ],
@@ -72,14 +74,14 @@
     }
   ],
   "cookie_statistics": {
-    "user_cookies": 60,
-    "session_cookies": 50,
-    "thirdparty_cookies": 20
-  },
+  "user_cookies": 70,
+  "session_cookies": 75,
+  "thirdparty_cookies": 65
+  },  
   "past_scandals":[
     {
-      "headline":"Spotify resets some account passwords citing ‘suspicious activity’",
-      "source":"https://techcrunch.com/2019/05/22/spotify-password-resets/",
+      "headline":"eBay asks 145 million users to change passwords after data breach",
+      "source":"https://www.washingtonpost.com/news/the-switch/wp/2014/05/21/ebay-asks-145-million-users-to-change-passwords-after-data-breach/",
       "source_title":"DataBreaches",
       "author":"John Doe"
     }

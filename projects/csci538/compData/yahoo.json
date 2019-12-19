@@ -1,10 +1,10 @@
 {
-  "name":"Expedia", 
+  "name":"Yahoo", 
   "xpos":-1,
-  "ypos":3,
-  "logo_loc":"Logo/expedia_logo",
-  "category":"travel", 
-  "source":"https://www.expedia.com/",
+  "ypos":7,
+  "logo_loc":"Logo/yahoo_logo",
+  "category":"searchengine",  
+  "source":"https://www.yahoo.com/",
   "browser_permissions":[
     {
       "name":"Location",
@@ -23,44 +23,42 @@
       "icon_loc":"Icons/payment_color"
     }
   ],
-  "alternatives":[    
+  "alternatives":[   
     {
-      "name":"Tripadvisor",
-      "logo_loc":"Logo/tripadvisor_logo",
+      "name":"Google",
+      "logo_loc":"Logo/google_logo",
       "threat_score":70
     },
     {
-      "name":"GoogleFlights",
-      "logo_loc":"Logo/googleflights_logo",
+      "name":"Bing",
+      "logo_loc":"Logo/bing_logo",
       "threat_score":76
     },
     {
-      "name":"Airbnb",
-      "logo_loc":"Logo/airbnb_logo",
+      "name":"Duckduckgo",
+      "logo_loc":"Logo/duckduckgo_logo",
       "threat_score":39
     }
   ],
-  "threat_score":25,
+  "threat_score":65,
   "trackers":[
     {
       "name":"tracker_c",
       "companies":[
-        "Google",
-        "Deserve",
         "Airbnb",
-        "GoogleFlights"
+        "LinkedIn"
       ]
     }
   ],
   "cookie_statistics": {
   "user_cookies": 70,
-  "session_cookies": 50,
-  "thirdparty_cookies": 10
+  "session_cookies": 30,
+  "thirdparty_cookies": 55
   },  
   "past_scandals":[
     {
-      "headline":"An Expedia subsidiary says it identified a security breach that affected 880,000 cards",
-      "source":"https://www.cnbc.com/2018/03/20/an-expedia-subsidiary-says-a-security-breach-affected-880000-cards.html",
+      "headline":"500 MILLION USERS AFFECTED BY YAHOO DATA BREACH",
+      "source":"https://www.pindrop.com/blog/500-million-users-affected-by-yahoo-data-breach/",
       "source_title":"DataBreaches",
       "author":"John Doe"
     }

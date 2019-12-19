@@ -1,10 +1,10 @@
 {
-  "name":"Airbnb",
-  "xpos":1,
-  "ypos":3,
-  "logo_loc":"Logo/airbnb_logo",
-  "category":"travel",
-  "source":"https://www.airbnb.com/",
+  "name":"Trivago", 
+  "xpos":0,
+  "ypos":2,
+  "logo_loc":"Logo/trivago_logo",
+  "category":"travel",  
+  "source":"https://www.trivago.com/",
   "browser_permissions":[
     {
       "name":"Location",
@@ -23,10 +23,10 @@
       "icon_loc":"Icons/payment_color"
     }
   ],
-  "alternatives":[
+  "alternatives":[    
     {
       "name":"Tripadvisor",
-      "logo_loc":"Logo/tripadvisor_logo",
+      "logo_loc":"Logo/google_logo",
       "threat_score":70
     },
     {
@@ -35,36 +35,35 @@
       "threat_score":76
     },
     {
-      "name":"Trivago",
-      "logo_loc":"Logo/trivago_logo",
+      "name":"Airbnb",
+      "logo_loc":"Logo/airbnb_logo",
       "threat_score":39
     }
   ],
-  "threat_score":30,
+  "threat_score":55,
   "trackers":[
     {
       "name":"tracker_c",
       "companies":[
-        "GoogleFlights",
         "Google",
-        "Instagram",
-        "Yelp",
+        "Instagram",  
         "Netflix",
         "Deserve",
         "Youtube",
-        "Facebook"
+        "Airbnb",
+        "GoogleFlights"
       ]
     }
   ],
   "cookie_statistics": {
-    "user_cookies": 90,
-    "session_cookies": 20,
-    "thirdparty_cookies": 35
-  },
+	"user_cookies": 90,
+	"session_cookies": 50,
+	"thirdparty_cookies": 60
+  },  
   "past_scandals":[
     {
-      "headline":"Airbnb updates security after hackers hijack accounts",
-      "source":"https://www.housingwire.com/articles/39881-airbnb-updates-security-after-hackers-hijack-accounts-to-rob-hosts-homes/",
+      "headline":"Trivago advertising scandal catches interest of Commerce Commission",
+      "source":"https://www.stuff.co.nz/business/business-top-stories/109050428/trivago-advertising-scandal-catches-interest-of-commerce-commission",
       "source_title":"DataBreaches",
       "author":"John Doe"
     }

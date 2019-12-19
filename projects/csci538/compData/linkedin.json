@@ -1,10 +1,10 @@
 {
-  "name":"Spotify",
-  "xpos":-5,
-  "ypos":3,
-  "logo_loc":"Logo/spotify_logo",
-  "category":"entertainment",
-  "source":"https://www.spotify.com/",
+  "name":"LinkedIn",
+  "xpos":4,
+  "ypos":4,
+  "logo_loc":"Logo/linkedin_logo",
+  "category":"social",
+  "source":"https://www.linkedin.com/",
   "browser_permissions":[
     {
       "name":"Location",
@@ -33,27 +33,29 @@
   ],
   "alternatives":[
     {
-      "name":"Netflix",
-      "logo_loc":"Logo/netflix_logo",
+      "name":"Indeed",
+      "logo_loc":"Logo/indeed_logo",
       "threat_score":70
     },
     {
-      "name":"Youtube",
-      "logo_loc":"Logo/youtube_logo",
+      "name":"GlassDoor",
+      "logo_loc":"Logo/glassdoor_logo",
       "threat_score":76
     },
     {
-      "name":"Amazon",
-      "logo_loc":"Logo/amazonVideo_logo",
+      "name":"AngleList",
+      "logo_loc":"Logo/angellist_logo",
       "threat_score":39
     }
   ],
-  "threat_score":29,
+  "threat_score":38,
   "trackers":[
+
     {
       "name":"tracker_c",
       "companies":[
-        "​"
+        "Bing",
+        "Twitter"
       ]
     }
   ],
@@ -72,14 +74,14 @@
     }
   ],
   "cookie_statistics": {
-    "user_cookies": 60,
-    "session_cookies": 50,
-    "thirdparty_cookies": 20
-  },
+	"user_cookies": 60,
+	"session_cookies": 50,
+	"thirdparty_cookies": 45
+  },  
   "past_scandals":[
     {
-      "headline":"Spotify resets some account passwords citing ‘suspicious activity’",
-      "source":"https://techcrunch.com/2019/05/22/spotify-password-resets/",
+      "headline":"LinkedIn Lost 167 Million Account Credentials in Data Breach’",
+      "source":"https://fortune.com/2016/05/18/linkedin-data-breach-email-password/",
       "source_title":"DataBreaches",
       "author":"John Doe"
     }

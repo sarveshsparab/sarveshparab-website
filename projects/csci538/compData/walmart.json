@@ -1,10 +1,10 @@
 {
-  "name":"Spotify",
-  "xpos":-5,
-  "ypos":3,
-  "logo_loc":"Logo/spotify_logo",
-  "category":"entertainment",
-  "source":"https://www.spotify.com/",
+  "name":"Walmart",
+  "xpos":1,
+  "ypos":-1,
+  "logo_loc":"Logo/walmart_logo",
+  "category":"shopping",
+  "source":"https://www.walmart.com/",
   "browser_permissions":[
     {
       "name":"Location",
@@ -33,27 +33,28 @@
   ],
   "alternatives":[
     {
-      "name":"Netflix",
-      "logo_loc":"Logo/netflix_logo",
+      "name":"Amazon",
+      "logo_loc":"Logo/amazon_logo",
       "threat_score":70
     },
     {
-      "name":"Youtube",
-      "logo_loc":"Logo/youtube_logo",
+      "name":"Ebay",
+      "logo_loc":"Logo/ebay_logo",
       "threat_score":76
     },
     {
-      "name":"Amazon",
-      "logo_loc":"Logo/amazonVideo_logo",
+      "name":"Flipkart",
+      "logo_loc":"Logo/flipkart_logo",
       "threat_score":39
     }
   ],
-  "threat_score":29,
+  "threat_score":58,
   "trackers":[
     {
       "name":"tracker_c",
       "companies":[
-        "​"
+        "Google",
+        "Ebay"
       ]
     }
   ],
@@ -72,14 +73,14 @@
     }
   ],
   "cookie_statistics": {
-    "user_cookies": 60,
-    "session_cookies": 50,
-    "thirdparty_cookies": 20
-  },
+	"user_cookies": 80,
+	"session_cookies": 50,
+	"thirdparty_cookies": 60
+  },  
   "past_scandals":[
     {
-      "headline":"Spotify resets some account passwords citing ‘suspicious activity’",
-      "source":"https://techcrunch.com/2019/05/22/spotify-password-resets/",
+      "headline":"Breach! Walmart exposed personal data of 1.3 million U.S. shoppers’",
+      "source":"https://www.komando.com/security-privacy/breach-walmart-exposed-personal-data-of-1-3-million-u-s-shoppers/446247/",
       "source_title":"DataBreaches",
       "author":"John Doe"
     }

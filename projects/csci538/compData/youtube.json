@@ -1,10 +1,10 @@
 {
-  "name":"Spotify",
-  "xpos":-5,
-  "ypos":3,
-  "logo_loc":"Logo/spotify_logo",
+  "name":"Youtube",
+  "xpos":-4,
+  "ypos":4,
+  "logo_loc":"Logo/youtube_logo",
   "category":"entertainment",
-  "source":"https://www.spotify.com/",
+  "source":"https://www.youtube.com/",
   "browser_permissions":[
     {
       "name":"Location",
@@ -38,22 +38,31 @@
       "threat_score":70
     },
     {
-      "name":"Youtube",
-      "logo_loc":"Logo/youtube_logo",
+      "name":"Spotify",
+      "logo_loc":"Logo/spotify_logo",
       "threat_score":76
     },
     {
-      "name":"Amazon",
+      "name":"Google",
       "logo_loc":"Logo/amazonVideo_logo",
       "threat_score":39
     }
   ],
-  "threat_score":29,
+  "threat_score":59,
   "trackers":[
     {
       "name":"tracker_c",
       "companies":[
-        "​"
+    "Google",
+    "Yelp",
+    "Netflix",
+    "Deserve",
+    "Airbnb",
+    "Trivago",
+    "Facebook",
+    "GoogleFlights",
+    "Spotify"
+
       ]
     }
   ],
@@ -72,14 +81,14 @@
     }
   ],
   "cookie_statistics": {
-    "user_cookies": 60,
-    "session_cookies": 50,
-    "thirdparty_cookies": 20
-  },
+	"user_cookies": 90,
+	"session_cookies": 50,
+	"thirdparty_cookies": 90
+  },  
   "past_scandals":[
     {
-      "headline":"Spotify resets some account passwords citing ‘suspicious activity’",
-      "source":"https://techcrunch.com/2019/05/22/spotify-password-resets/",
+      "headline":"Security Warning For 23 Million YouTube Creators Following ‘Massive’ Hack Attack",
+      "source":"https://www.forbes.com/sites/daveywinder/2019/09/23/youtube-security-warning-issued-for-23-million-creators-as-massive-hack-attack-confirmed/#793cddd96b4f",
       "source_title":"DataBreaches",
       "author":"John Doe"
     }

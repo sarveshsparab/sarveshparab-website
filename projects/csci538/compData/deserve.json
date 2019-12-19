@@ -1,10 +1,10 @@
 {
-  "name":"Tripadvisor",
+  "name":"Deserve",
   "xpos":-1,
-  "ypos":3,
-  "logo_loc":"Logo/tripadvisor_logo",
-  "category":"travel",
-  "source":"https://www.tripadvisor.com/",
+  "ypos":-1,
+  "logo_loc":"Logo/deserve_logo",
+  "category":"shopping",
+  "source":"https://www.deserve.com/",
   "browser_permissions":[
     {
       "name":"Location",
@@ -33,37 +33,34 @@
   ],
   "alternatives":[
     {
-      "name":"Booking",
-      "logo_loc":"Logo/booking_logo",
-      "threat_score":77
+      "name":"Visa",
+      "logo_loc":"Logo/visa_logo",
+      "threat_score":70
     },
     {
-      "name":"Expedia",
-      "logo_loc":"Logo/booking_logo",
+      "name":"Mastercard",
+      "logo_loc":"Logo/mastercard_logo",
       "threat_score":76
     },
     {
-      "name":"Google",
-      "logo_loc":"Logo/airbnb_logo",
+      "name":"Discover",
+      "logo_loc":"Logo/discover_logo",
       "threat_score":39
     }
   ],
   "threat_score":48,
   "trackers":[
     {
-      "name":"tracker_d",
-      "companies":[
-        "Netflix",
-        "youtube",
-        "Pandora"
-      ]
-    },
-    {
       "name":"tracker_c",
       "companies":[
-        "Hulu",
-        "youtube",
-        "Spotify"
+    "Google",
+    "Yelp",
+    "Netflix",
+    "Youtube",
+    "Airbnb",
+    "Trivago",
+    "Facebook",
+    "GoogleFlights"
       ]
     }
   ],
@@ -81,11 +78,16 @@
       "value":"7 days"
     }
   ],
+  "cookie_statistics": {
+	"user_cookies": 70,
+	"session_cookies": 50,
+	"thirdparty_cookies": 10
+  },  
   "past_scandals":[
     {
-      "headline":"TripAdvisor resets passwords after some accounts were improperly accessed",
-      "source":"https://www.zdnet.com/article/tripadvisor-resets-some-account-passwords-citing-unauthorized-access/",
-      "source_title":"ZDNet",
+      "headline":"No data breach found",
+      "source":"https://www.deserve.com/blog/protect-yourself-from-the-next-big-credit-card-hack/",
+      "source_title":"DataBreaches",
       "author":"John Doe"
     }
   ]

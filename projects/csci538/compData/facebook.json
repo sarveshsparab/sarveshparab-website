@@ -1,10 +1,10 @@
 {
-  "name":"Spotify",
-  "xpos":-5,
+  "name":"Facebook",
+  "xpos":3,
   "ypos":3,
-  "logo_loc":"Logo/spotify_logo",
-  "category":"entertainment",
-  "source":"https://www.spotify.com/",
+  "logo_loc":"Logo/facebook_logo",
+  "category":"social",
+  "source":"https://www.facebook.com/",
   "browser_permissions":[
     {
       "name":"Location",
@@ -33,27 +33,35 @@
   ],
   "alternatives":[
     {
-      "name":"Netflix",
-      "logo_loc":"Logo/netflix_logo",
+      "name":"Twitter",
+      "logo_loc":"Logo/twitter_logo",
       "threat_score":70
     },
     {
-      "name":"Youtube",
-      "logo_loc":"Logo/youtube_logo",
+      "name":"Whatsapp",
+      "logo_loc":"Logo/whatsapp_logo",
       "threat_score":76
     },
     {
-      "name":"Amazon",
-      "logo_loc":"Logo/amazonVideo_logo",
+      "name":"Google",
+      "logo_loc":"Logo/google_logo",
       "threat_score":39
     }
   ],
-  "threat_score":29,
+  "threat_score":85,
   "trackers":[
     {
       "name":"tracker_c",
       "companies":[
-        "​"
+    "Google",
+    "Instagram",
+    "Yelp",
+    "Netflix",
+    "Deserve",
+    "Youtube",
+    "Airbnb",
+    "Trivago",
+    "GoogleFlights"
       ]
     }
   ],
@@ -72,14 +80,14 @@
     }
   ],
   "cookie_statistics": {
-    "user_cookies": 60,
-    "session_cookies": 50,
-    "thirdparty_cookies": 20
-  },
+	"user_cookies": 90,
+	"session_cookies": 50,
+	"thirdparty_cookies": 80
+  },  
   "past_scandals":[
     {
-      "headline":"Spotify resets some account passwords citing ‘suspicious activity’",
-      "source":"https://techcrunch.com/2019/05/22/spotify-password-resets/",
+      "headline":"Facebook–Cambridge Analytica data scandal",
+      "source":"https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal",
       "source_title":"DataBreaches",
       "author":"John Doe"
     }

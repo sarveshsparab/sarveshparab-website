@@ -6,7 +6,6 @@
  * Time: 10:48 AM
  */
 
-$baseJson = file_get_contents("companyData_base.json");
 $existingJson = file_get_contents("companyData_dynamic.json");
 $existingJsonDecoded = json_decode($existingJson, true);
 
@@ -30,7 +29,12 @@ if (isset($_GET['func']) && strtoupper($_GET['func']) == 'ADD') {
         $compList[$compName] = false;
         $resultJson = populateComp($compList);
     }
+} elseif (isset($_GET['func']) && strtoupper($_GET['func']) == 'STATUS') {
+    echo print_r($compList, true);
+    exit();
 }
+
+//echo print_r($compList, true);
 
 file_put_contents('companyData_dynamic.json', $resultJson);
 
@@ -43,6 +47,8 @@ function populateComp($compList){
             if (file_exists($file_loc)) {
                 array_push($emptyJson['companyData'], json_decode(file_get_contents($file_loc), true));
             }
+
+
         }
     }
 

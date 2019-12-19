@@ -1,22 +1,14 @@
 {
-  "name":"Google",
-  "xpos":1,
-  "ypos":3,
+  "name":"Google", 
+  "xpos":0,
+  "ypos":6,
   "logo_loc":"Logo/google_logo",
-  "category":"travel",
-  "source":"https://www.google.com/flights",
+  "category":"searchengine",  
+  "source":"https://www.google.com/",
   "browser_permissions":[
     {
       "name":"Location",
       "icon_loc":"Icons/location_color"
-    },
-    {
-      "name":"Camera",
-      "icon_loc":"Icons/camera_color"
-    },
-    {
-      "name":"Microphone",
-      "icon_loc":"Icons/microphone_color"
     },
     {
       "name":"Notifications",
@@ -27,84 +19,56 @@
       "icon_loc":"Icons/javascript_color"
     },
     {
-      "name":"Flash",
-      "icon_loc":"Icons/flash_color"
-    },
-    {
-      "name":"Sound",
-      "icon_loc":"Icons/sound_color"
-    },
-    {
-      "name":"USB",
-      "icon_loc":"Icons/usb_color"
-    },
-    {
       "name":"Payment",
       "icon_loc":"Icons/payment_color"
     }
   ],
-  "alternatives":[
+  "alternatives":[    
     {
-      "name":"Tripadvisor",
-      "logo_loc":"Logo/tripadvisor_logo",
+      "name":"Yahoo",
+      "logo_loc":"Logo/yahoo_logo",
       "threat_score":70
     },
     {
-      "name":"Expedia",
-      "logo_loc":"Logo/booking_logo",
+      "name":"Duckduckgo",
+      "logo_loc":"Logo/duckduckgo_logo",
       "threat_score":76
     },
     {
-      "name":"Airbnb",
-      "logo_loc":"Logo/airbnb_logo",
-      "threat_score":48
+      "name":"Bing",
+      "logo_loc":"Logo/bing_logo",
+      "threat_score":39
     }
   ],
-  "threat_score":39,
+  "threat_score":90,
   "trackers":[
-    {
-      "name":"tracker_d",
-      "companies":[
-        "Netflix",
-        "youtube",
-        "Pandora"
-      ]
-    },
     {
       "name":"tracker_c",
       "companies":[
-        "Hulu",
-        "youtube",
-        "Spotify"
+        "GoogleFlights",
+        "Instagram",   
+        "Yelp",
+        "Netflix",
+        "Deserve",
+        "Youtube",
+        "Facebook",
+        "Trivago",
+        "Airbnb",
+        "Expedia"
       ]
     }
   ],
-  "cookie_data":[
-    {
-      "key":"last_trip_booked",
-      "value":"France"
-    },
-    {
-      "key":"last_trip_dates",
-      "value":"06:13:2019 - 06:21:2019"
-    },
-    {
-      "key":"most_favored_airline",
-      "value":"Southwest"
-    }
-  ],
+  "cookie_statistics": {
+  "user_cookies": 90,
+  "session_cookies": 80,
+  "thirdparty_cookies": 95
+  },  
   "past_scandals":[
     {
-      "headline":"2018 Google data breach",
-      "source":"https://en.wikipedia.org/wiki/2018_Google_data_breach",
-      "source_title":"wikipedia",
+      "headline":"5 Million Google Passwords Leaked",
+      "source":"https://www.bankinfosecurity.com/5-million-google-passwords-leaked-a-7299",
+      "source_title":"DataBreaches",
       "author":"John Doe"
-    },
-    {
-      "headline":"5 million Gmail passwords leaked",
-      "source":"https://money.cnn.com/2014/09/10/technology/security/gmail-hack/index.html",
-      "source_title":"CNN",
-      "author":"Jose Pagliery"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "name":"Spotify",
-  "xpos":-5,
-  "ypos":3,
-  "logo_loc":"Logo/spotify_logo",
+  "name":"Instagram",
+  "xpos":-4,
+  "ypos":2,
+  "logo_loc":"Logo/instagram_logo",
   "category":"entertainment",
-  "source":"https://www.spotify.com/",
+  "source":"https://www.instagram.com/",
   "browser_permissions":[
     {
       "name":"Location",
@@ -33,27 +33,30 @@
   ],
   "alternatives":[
     {
-      "name":"Netflix",
-      "logo_loc":"Logo/netflix_logo",
+      "name":"Facebook",
+      "logo_loc":"Logo/facebook_logo",
       "threat_score":70
+    },
+    {
+      "name":"Twitter",
+      "logo_loc":"Logo/twitter_logo",
+      "threat_score":76
     },
     {
       "name":"Youtube",
       "logo_loc":"Logo/youtube_logo",
-      "threat_score":76
-    },
-    {
-      "name":"Amazon",
-      "logo_loc":"Logo/amazonVideo_logo",
       "threat_score":39
     }
   ],
-  "threat_score":29,
+  "threat_score":75,
   "trackers":[
+
     {
       "name":"tracker_c",
       "companies":[
-        "​"
+        "Facebook",
+        "Walmart",
+        "Youtube"
       ]
     }
   ],
@@ -72,14 +75,14 @@
     }
   ],
   "cookie_statistics": {
-    "user_cookies": 60,
+    "user_cookies": 90,
     "session_cookies": 50,
-    "thirdparty_cookies": 20
+    "thirdparty_cookies": 95
   },
   "past_scandals":[
     {
-      "headline":"Spotify resets some account passwords citing ‘suspicious activity’",
-      "source":"https://techcrunch.com/2019/05/22/spotify-password-resets/",
+      "headline":"Instagram Breach Exposes Personal Data of 49 Million Users",
+      "source":"https://www.cpomagazine.com/cyber-security/instagram-breach-exposes-personal-data-of-49-million-users/",
       "source_title":"DataBreaches",
       "author":"John Doe"
     }
